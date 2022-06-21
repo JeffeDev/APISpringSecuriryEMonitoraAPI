@@ -9,11 +9,11 @@
 		<version>2.1.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.alura</groupId>
-	<artifactId>forum</artifactId>
+	<groupId>br.com.restaurantes</groupId>
+	<artifactId>restaurantes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>forum</name>
-	<description>Demo project for Spring Boot</description>
+	<name>restaurantes</name>
+	<description>Sistema controle de Restaurantes, Pedidos, Balcao e Delivery com emissão de Nfe</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -75,6 +75,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
@@ -88,6 +94,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>Restaurante</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
