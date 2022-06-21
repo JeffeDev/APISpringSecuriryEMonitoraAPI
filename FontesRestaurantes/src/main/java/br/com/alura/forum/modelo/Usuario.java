@@ -27,36 +27,6 @@ public class Usuario implements UserDetails {
 	private String senha;
 	private String celular;
 	private String cpf;
-	
-	public Usuario(Long id, String nome, String email, String senha, String celular, String cpf, Endereco endereco,
-			List<Perfil> perfis) {
-		this.id = id;
-		this.nome = nome;
-		this.email = email;
-		this.senha = senha;
-		this.celular = celular;
-		this.cpf = cpf;
-		this.endereco = endereco;
-		this.perfis = perfis;
-	}
-
-	
-	public String getCelular() {
-		return celular;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public Endereco getEndereco() {
-		return endereco;
-	}
-
-	public List<Perfil> getPerfis() {
-		return perfis;
-	}
-
 
 	@OneToMany
 	private Endereco endereco;
@@ -90,6 +60,18 @@ public class Usuario implements UserDetails {
 		return true;
 	}
 
+	public Usuario(Long id, String nome, String email, String senha, String celular, String cpf, Endereco endereco,
+			List<Perfil> perfis) {
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.senha = senha;
+		this.celular = celular;
+		this.cpf = cpf;
+		this.endereco = endereco;
+		this.perfis = perfis;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -120,6 +102,22 @@ public class Usuario implements UserDetails {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	
+	public String getCelular() {
+		return celular;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public List<Perfil> getPerfis() {
+		return perfis;
 	}
 
 	@Override
