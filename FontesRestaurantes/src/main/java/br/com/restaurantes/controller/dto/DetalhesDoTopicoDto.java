@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import br.com.restaurantes.modelo.StatusTopico;
-import br.com.restaurantes.modelo.Topico;
+import br.com.restaurantes.modelo.Mesas;
 
 public class DetalhesDoTopicoDto {
 
@@ -18,7 +18,7 @@ public class DetalhesDoTopicoDto {
 	private StatusTopico status;
 	private List<RespostaDto> respostas;
 	
-	public DetalhesDoTopicoDto(Topico topico) {
+	public DetalhesDoTopicoDto(Mesas topico) {
 		this.id = topico.getId();
 		this.titulo = topico.getTitulo();
 		this.mensagem = topico.getMensagem();

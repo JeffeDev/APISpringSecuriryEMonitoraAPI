@@ -1,20 +1,26 @@
 package br.com.restaurantes.modelo;
 
+import java.sql.Time;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
+@Table(name = "usuario")
 public class Usuario implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
@@ -26,14 +32,74 @@ public class Usuario implements UserDetails {
 	private String senha;
 	private String celular;
 	private String cpf;
+	private LocalDate dataNascimento;
+	private Time horaNascimento;
+	private String cidadeNasceuUF; // Formatação Cidade-UF
 
-//	@OneToMany
-//	private Endereco endereco;
-//	
+	@OneToMany(mappedBy="usuario", cascade = CascadeType.ALL)
+	private List<UsuarioEndereco> enderecos = new ArrayList<>();
 	
 	@ManyToMany(fetch = FetchType.EAGER)
 	private List<Perfil> perfis = new ArrayList<>();
 
+	public Usuario() {
+	}
+
+	public Usuario(String nome, String email, String senha, String celular, String cpf, LocalDate dataNascimento,
+			Time horaNascimento, String cidadeNasceuUF, List<UsuarioEndereco> enderecos,
+			List<Perfil> perfis) {
+		this.nome = nome;
+		this.email = email;
+		this.senha = senha;
+		this.celular = celular;
+		this.cpf = cpf;
+		this.dataNascimento = dataNascimento;
+		this.horaNascimento = horaNascimento;
+		this.cidadeNasceuUF = cidadeNasceuUF;
+		this.enderecos = enderecos;
+		this.perfis = perfis;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public Time getHoraNascimento() {
+		return horaNascimento;
+	}
+
+	public void setHoraNascimento(Time horaNascimento) {
+		this.horaNascimento = horaNascimento;
+	}
+
+	public String getCidadeNasceuUF() {
+		return cidadeNasceuUF;
+	}
+
+	public void setCidadeNasceuUF(String cidadeNasceuUF) {
+		this.cidadeNasceuUF = cidadeNasceuUF;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public void setPerfis(List<Perfil> perfis) {
+		this.perfis = perfis;
+	}
+
+	public List<UsuarioEndereco> getEnderecos() {
+		return enderecos;
+	}
+
+	public void setEnderecos(List<UsuarioEndereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -57,18 +123,6 @@ public class Usuario implements UserDetails {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-	}
-
-	public Usuario(Long id, String nome, String email, String senha, String celular, String cpf, Endereco endereco,
-			List<Perfil> perfis) {
-		this.id = id;
-		this.nome = nome;
-		this.email = email;
-		this.senha = senha;
-		this.celular = celular;
-		this.cpf = cpf;
-		//this.endereco = endereco;
-		this.perfis = perfis;
 	}
 
 	public Long getId() {
@@ -107,6 +161,10 @@ public class Usuario implements UserDetails {
 		return celular;
 	}
 
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+	
 	public String getCpf() {
 		return cpf;
 	}

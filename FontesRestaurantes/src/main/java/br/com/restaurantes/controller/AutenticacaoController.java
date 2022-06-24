@@ -17,6 +17,7 @@ import br.com.restaurantes.controller.dto.TokenDto;
 import br.com.restaurantes.controller.form.LoginForm;
 import br.com.restaurantes.security.TokenService;
 
+
 @RestController
 @RequestMapping("/auth")
 public class AutenticacaoController {

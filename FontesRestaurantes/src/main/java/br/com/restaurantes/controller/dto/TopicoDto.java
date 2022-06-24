@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 import org.springframework.data.domain.Page;
 
-import br.com.restaurantes.modelo.Topico;
+import br.com.restaurantes.modelo.Mesas;
 
 public class TopicoDto {
 
@@ -13,7 +13,7 @@ public class TopicoDto {
 	private String mensagem;
 	private LocalDateTime dataCriacao;
 	
-	public TopicoDto(Topico topico) {
+	public TopicoDto(Mesas topico) {
 		this.id = topico.getId();
 		this.titulo = topico.getTitulo();
 		this.mensagem = topico.getMensagem();
@@ -36,7 +36,7 @@ public class TopicoDto {
 		return dataCriacao;
 	}
 
-	public static Page<TopicoDto> converter(Page<Topico> topicos) {
+	public static Page<TopicoDto> converter(Page<Mesas> topicos) {
 		return topicos.map(TopicoDto::new);
 	}
 

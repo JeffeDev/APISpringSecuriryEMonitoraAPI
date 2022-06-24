@@ -5,8 +5,8 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import br.com.restaurantes.modelo.Curso;
-import br.com.restaurantes.modelo.Topico;
+import br.com.restaurantes.modelo.Produto;
+import br.com.restaurantes.modelo.Mesas;
 import br.com.restaurantes.repository.CursoRepository;
 
 public class TopicoForm {
@@ -32,9 +32,9 @@ public class TopicoForm {
 		this.nomeCurso = nomeCurso;
 	}
 
-	public Topico converter(CursoRepository cursoRepository) {
-		Curso curso = cursoRepository.findByNome(nomeCurso);
-		return new Topico(titulo, mensagem, curso);
+	public Mesas converter(CursoRepository cursoRepository) {
+		Produto curso = cursoRepository.findByNome(nomeCurso);
+		return new Mesas(titulo, mensagem, curso);
 	}
 
 }

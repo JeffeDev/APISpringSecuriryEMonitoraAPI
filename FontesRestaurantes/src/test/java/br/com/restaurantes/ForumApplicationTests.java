@@ -9,7 +9,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import br.com.restaurantes.modelo.Curso;
+import br.com.restaurantes.modelo.Produto;
 import br.com.restaurantes.repository.CursoRepository;
 
 @RunWith(SpringRunner.class)
@@ -18,21 +18,21 @@ import br.com.restaurantes.repository.CursoRepository;
 public class ForumApplicationTests {
 	@Autowired
 	private CursoRepository repository;
-	
+
 	@Autowired
 	private TestEntityManager em;
-	
+
 	@Test
-	public void testarCarregamentoFondByNomeporCurso() {
+	public void testarCarregamentoFindByNomeCurso() {
 		String nomeCurso = "HTML 5 TESTE";
-		
-		Curso html5 = new Curso();
+
+		Produto html5 = new Produto();
 		html5.setNome(nomeCurso);
 		html5.setCategoria("Programacao");
 		em.persist(html5);
-		
-		Curso curso = repository.findByNome(nomeCurso);
-		
+
+		Produto curso = repository.findByNome(nomeCurso);
+
 		Assert.assertNotNull(curso);
 		Assert.assertEquals(nomeCurso, curso.getNome());
 	}

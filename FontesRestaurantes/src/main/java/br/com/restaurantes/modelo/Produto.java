@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Curso {
+public class Produto {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -29,7 +29,7 @@ public class Curso {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Curso other = (Curso) obj;
+		Produto other = (Produto) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

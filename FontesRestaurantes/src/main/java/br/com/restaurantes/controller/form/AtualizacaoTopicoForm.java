@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import br.com.restaurantes.modelo.Topico;
+import br.com.restaurantes.modelo.Mesas;
 import br.com.restaurantes.repository.TopicoRepository;
 
 public class AtualizacaoTopicoForm {
@@ -24,8 +24,8 @@ public class AtualizacaoTopicoForm {
 		this.mensagem = mensagem;
 	}
 
-	public Topico atualizar(Long id, TopicoRepository topicoRepository) {
-		Topico topico = topicoRepository.getOne(id);
+	public Mesas atualizar(Long id, TopicoRepository topicoRepository) {
+		Mesas topico = topicoRepository.getOne(id);
 		
 		topico.setTitulo(this.titulo);
 		topico.setMensagem(this.mensagem);

@@ -2,7 +2,7 @@ package br.com.restaurantes.controller.dto;
 
 import java.time.LocalDateTime;
 
-import br.com.restaurantes.modelo.Resposta;
+import br.com.restaurantes.modelo.Pedido;
 
 public class RespostaDto {
 
@@ -11,7 +11,7 @@ public class RespostaDto {
 	private LocalDateTime dataCriacao;
 	private String nomeAutor;
 	
-	public RespostaDto(Resposta resposta) {
+	public RespostaDto(Pedido resposta) {
 		this.id = resposta.getId();
 		this.mensagem = resposta.getMensagem();
 		this.dataCriacao = resposta.getDataCriacao();

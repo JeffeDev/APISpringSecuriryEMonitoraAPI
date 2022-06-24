@@ -1,26 +1,43 @@
 package br.com.restaurantes.modelo;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
-public class Resposta {
+public class Mesas {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	private String titulo;
 	private String mensagem;
-	
-	@ManyToOne
-	private Topico topico;
 	private LocalDateTime dataCriacao = LocalDateTime.now();
+	@Enumerated(EnumType.STRING)
+	private StatusTopico status = StatusTopico.NAO_RESPONDIDO;
 	@ManyToOne
 	private Usuario autor;
-	private Boolean solucao = false;
+	@ManyToOne
+	private Produto curso;
+	@OneToMany(mappedBy = "topico")
+	private List<Pedido> respostas = new ArrayList<>();
+	
+	public Mesas() {
+	}
+	
+	public Mesas(String titulo, String mensagem, Produto curso) {
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+		this.curso = curso;
+	}
 
 	@Override
 	public int hashCode() {
@@ -38,7 +55,7 @@ public class Resposta {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Resposta other = (Resposta) obj;
+		Mesas other = (Mesas) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -55,20 +72,20 @@ public class Resposta {
 		this.id = id;
 	}
 
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
 	public String getMensagem() {
 		return mensagem;
 	}
 
 	public void setMensagem(String mensagem) {
 		this.mensagem = mensagem;
-	}
-
-	public Topico getTopico() {
-		return topico;
-	}
-
-	public void setTopico(Topico topico) {
-		this.topico = topico;
 	}
 
 	public LocalDateTime getDataCriacao() {
@@ -79,6 +96,14 @@ public class Resposta {
 		this.dataCriacao = dataCriacao;
 	}
 
+	public StatusTopico getStatus() {
+		return status;
+	}
+
+	public void setStatus(StatusTopico status) {
+		this.status = status;
+	}
+
 	public Usuario getAutor() {
 		return autor;
 	}
@@ -87,12 +112,20 @@ public class Resposta {
 		this.autor = autor;
 	}
 
-	public Boolean getSolucao() {
-		return solucao;
+	public Produto getCurso() {
+		return curso;
 	}
 
-	public void setSolucao(Boolean solucao) {
-		this.solucao = solucao;
+	public void setCurso(Produto curso) {
+		this.curso = curso;
+	}
+
+	public List<Pedido> getRespostas() {
+		return respostas;
+	}
+
+	public void setRespostas(List<Pedido> respostas) {
+		this.respostas = respostas;
 	}
 
 }

@@ -2,10 +2,10 @@ package br.com.restaurantes.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.restaurantes.modelo.Curso;
+import br.com.restaurantes.modelo.Produto;
 
-public interface CursoRepository extends JpaRepository<Curso, Long> {
+public interface CursoRepository extends JpaRepository<Produto, Long> {
 
-	Curso findByNome(String nome);
+	Produto findByNome(String nome);
 
 }

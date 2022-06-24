@@ -4,10 +4,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.restaurantes.modelo.Topico;
+import br.com.restaurantes.modelo.Mesas;
 
-public interface TopicoRepository extends JpaRepository<Topico, Long> {
+public interface TopicoRepository extends JpaRepository<Mesas, Long> {
 
-	Page<Topico> findByCursoNome(String nomeCurso, Pageable paginacao);
+	Page<Mesas> findByCursoNome(String nomeCurso, Pageable paginacao);
 
 }
