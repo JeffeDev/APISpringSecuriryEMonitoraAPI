@@ -1,7 +1,6 @@
 package br.com.restaurantes.modelo;
 
 import java.sql.Time;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -21,7 +20,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 @Table(name = "usuario")
-public class Usuario implements UserDetails {
+public class Usuario extends Pessoa implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -30,11 +29,6 @@ public class Usuario implements UserDetails {
 	private String nome;
 	private String email;
 	private String senha;
-	private String celular;
-	private String cpf;
-	private LocalDate dataNascimento;
-	private Time horaNascimento;
-	private String cidadeNasceuUF; // Formatação Cidade-UF
 
 	@OneToMany(mappedBy="usuario", cascade = CascadeType.ALL)
 	private List<UsuarioEndereco> enderecos = new ArrayList<>();
@@ -45,47 +39,14 @@ public class Usuario implements UserDetails {
 	public Usuario() {
 	}
 
-	public Usuario(String nome, String email, String senha, String celular, String cpf, LocalDate dataNascimento,
-			Time horaNascimento, String cidadeNasceuUF, List<UsuarioEndereco> enderecos,
+	public Usuario(String nome, String email, String senha, 
+			Time horaNascimento,  List<UsuarioEndereco> enderecos,
 			List<Perfil> perfis) {
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
-		this.celular = celular;
-		this.cpf = cpf;
-		this.dataNascimento = dataNascimento;
-		this.horaNascimento = horaNascimento;
-		this.cidadeNasceuUF = cidadeNasceuUF;
 		this.enderecos = enderecos;
 		this.perfis = perfis;
-	}
-
-	public LocalDate getDataNascimento() {
-		return dataNascimento;
-	}
-
-	public void setDataNascimento(LocalDate dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-
-	public Time getHoraNascimento() {
-		return horaNascimento;
-	}
-
-	public void setHoraNascimento(Time horaNascimento) {
-		this.horaNascimento = horaNascimento;
-	}
-
-	public String getCidadeNasceuUF() {
-		return cidadeNasceuUF;
-	}
-
-	public void setCidadeNasceuUF(String cidadeNasceuUF) {
-		this.cidadeNasceuUF = cidadeNasceuUF;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
 	}
 
 	public void setPerfis(List<Perfil> perfis) {
@@ -157,18 +118,6 @@ public class Usuario implements UserDetails {
 		this.senha = senha;
 	}
 	
-	public String getCelular() {
-		return celular;
-	}
-
-	public void setCelular(String celular) {
-		this.celular = celular;
-	}
-	
-	public String getCpf() {
-		return cpf;
-	}
-
 	public List<Perfil> getPerfis() {
 		return perfis;
 	}

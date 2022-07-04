@@ -22,15 +22,14 @@ public class UsuarioEndereco {
 	
 	@ManyToOne
     @JoinColumn(name = "endereco_id")
-	private Endereco endereco;		
-	
+	private Endereco endereco;			
 	private String numeroCasa;
 	private String coordenadasGpsMoradia;
 	
 	@Enumerated(EnumType.STRING)
-	private TipoEndereco tipoEndereco = TipoEndereco.RESIDENCIAL;
-	
+	private TipoEndereco tipoEndereco = TipoEndereco.RESIDENCIAL;	
 	private boolean localEntrega = false;
+	private String complemento;
 	
 	public TipoEndereco getTipoEndereco() {
 		return tipoEndereco;
@@ -102,6 +101,14 @@ public class UsuarioEndereco {
 	
 	public void setCoordenadasGpsMoradia(String coordenadasGpsMoradia) {
 		this.coordenadasGpsMoradia = coordenadasGpsMoradia;
+	}
+
+	public String getComplemento() {
+		return complemento;
+	}
+
+	public void setComplemento(String complemento) {
+		this.complemento = complemento;
 	}
 
 }
