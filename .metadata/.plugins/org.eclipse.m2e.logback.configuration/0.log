@@ -3430,3 +3430,967 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-06-28 21:06:40,530 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-28 21:06:40,531 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\FontesRestaurantes\src\test\resources
 2022-06-29 08:27:58,242 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-13 11:14:23,185 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-13 11:14:34,797 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-13 11:14:34,803 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-13 11:14:34,827 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-13 11:14:34,837 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-13 11:14:34,837 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\FontesRestaurantes\src\test\resources
+2022-07-13 11:14:37,058 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-13 11:14:37,058 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-13 11:14:37,064 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-13 11:14:37,066 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-13 11:14:37,067 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\MonitoraRestaurantes\src\test\resources
+2022-07-13 12:49:33,325 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-13 13:30:46,597 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-13 14:35:46,305 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-13 14:41:09,714 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjetoUnisulComProfNapoleao:ProjetoUnisulComProfNapoleao:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-13 14:41:12,301 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjetoUnisulComProfNapoleao/src
+2022-07-13 14:41:12,302 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ProjetoUnisulComProfNapoleao/src/test/java because it overlaps with /ProjetoUnisulComProfNapoleao/src
+2022-07-13 14:41:12,489 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-07-13 14:41:12,755 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjetoUnisulComProfNapoleao:ProjetoUnisulComProfNapoleao:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-13 14:41:13,330 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjetoUnisulComProfNapoleao/src
+2022-07-13 14:41:13,331 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ProjetoUnisulComProfNapoleao/src/test/java because it overlaps with /ProjetoUnisulComProfNapoleao/src
+2022-07-13 14:41:13,416 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-07-13 14:41:13,814 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-13 14:41:13,816 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-13 14:41:13,819 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-13 14:41:13,821 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-13 14:41:58,421 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2022-07-14 17:23:58,139 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-07-14 17:25:50,702 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:25:50,704 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:25:50,707 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:25:50,707 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:26:37,609 [main] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:26:37,610 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:26:37,612 [main] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:26:37,614 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:27:11,403 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:27:11,405 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:27:11,407 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:27:11,409 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:27:25,823 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:27:25,824 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:27:25,826 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:27:25,827 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:27:36,444 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:27:36,446 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:27:36,449 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:27:36,451 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:28:21,228 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:21,230 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:28:21,233 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:21,235 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:28:28,044 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:28,046 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:28:28,050 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:28,051 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:28:36,006 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:36,008 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:28:36,010 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:36,012 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:28:52,725 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:52,726 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:28:52,727 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:28:52,729 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 17:29:08,037 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:29:08,039 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 17:29:08,041 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 17:29:08,042 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 19:36:49,275 [Worker-29: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjetoUnisulComProfNapoleao:ProjetoUnisulComProfNapoleao:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-14 19:36:50,280 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 19:36:50,281 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 19:36:50,285 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 19:36:50,286 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 19:36:52,017 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 19:36:52,018 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 19:36:52,020 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 19:36:52,021 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:24:04,886 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-14 23:24:20,538 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:24:20,543 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-14 23:24:20,563 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:24:20,567 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:24:20,567 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\FontesRestaurantes\src\test\resources
+2022-07-14 23:24:25,282 [Worker-17: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjetoUnisulComProfNapoleao:ProjetoUnisulComProfNapoleao:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-14 23:24:26,678 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:24:26,681 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 23:24:26,682 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:24:26,683 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:25:16,064 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:25:16,065 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 23:25:16,067 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:25:16,068 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:25:24,654 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:25:24,657 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 23:25:24,658 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:25:24,660 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:25:56,791 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:25:56,792 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\main\resources
+2022-07-14 23:25:56,793 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:25:56,794 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:26:52,351 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:26:52,367 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:26:52,368 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:26:52,369 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:27:08,875 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:27:08,877 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:27:08,895 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-14 23:27:08,896 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:32:12,888 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjetoUnisulComProfNapoleao:ProjetoUnisulComProfNapoleao:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-14 23:33:32,549 [Worker-23: reload maven project] ERROR o.e.m2e.editor.pom.MavenPomEditor - failed to load maven project for org.eclipse.ui.part.FileEditorInput(/ProjetoUnisulComProfNapoleao/pom.xml)
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:831) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049) ~[na:na]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048) ~[na:na]
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:257) ~[org.eclipse.m2e.core.ui_1.19.0.20220206-1032.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:659) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:979) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2022-07-14 23:33:32,934 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjetoUnisulComProfNapoleao:ProjetoUnisulComProfNapoleao:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-14 23:34:26,432 [Worker-26: reload maven project] ERROR o.e.m2e.editor.pom.MavenPomEditor - failed to load maven project for org.eclipse.ui.part.FileEditorInput(/ProjetoUnisulComProfNapoleao/pom.xml)
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:831) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049) ~[na:na]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048) ~[na:na]
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:257) ~[org.eclipse.m2e.core.ui_1.19.0.20220206-1032.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:659) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:979) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2022-07-14 23:34:26,569 [Worker-23: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:579) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:547) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:503) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:349) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:303) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t\t<build>... @34:10) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117) ~[na:na]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:85) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:577) ~[na:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t\t<build>... @34:10) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkFieldWithDuplicate(MavenXpp3Reader.java:140) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2279) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3872) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[na:na]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:112) ~[na:na]
+	... 26 common frames omitted
+2022-07-14 23:34:27,922 [Worker-25: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:579) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:547) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:503) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:349) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:303) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t\t<build>... @34:10) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117) ~[na:na]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:85) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:577) ~[na:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t\t<build>... @34:10) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkFieldWithDuplicate(MavenXpp3Reader.java:140) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2279) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3872) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[na:na]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:112) ~[na:na]
+	... 26 common frames omitted
+2022-07-14 23:34:33,214 [Worker-23: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t<build>... @34:9)  @ line 34, column 9
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t<build>... @34:9)  @ line 34, column 9
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:696) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$16(ProjectRegistryManager.java:851) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1009) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:847) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:201) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:87) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:255) ~[org.eclipse.m2e.core.ui_1.19.0.20220206-1032.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:659) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:979) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2022-07-14 23:34:33,403 [Worker-23: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:579) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:547) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:503) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:349) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:303) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t<build>... @34:9) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117) ~[na:na]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:85) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:577) ~[na:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated tag: 'build' (position: START_TAG seen ...</dependencies>\r\n\t<build>... @34:9) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkFieldWithDuplicate(MavenXpp3Reader.java:140) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2279) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3872) ~[na:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[na:na]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:112) ~[na:na]
+	... 26 common frames omitted
+2022-07-14 23:36:10,491 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.restaurantes:restaurantes:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-14 23:36:10,842 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:36:10,843 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:36:10,844 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:36:10,846 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:36:10,846 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:36:12,316 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:36:12,317 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:36:12,321 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:36:12,324 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:36:12,325 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:36:29,096 [Worker-25: Launching Executing clean in C__Workspace_ProjetoRestaurantes_ProjetoUnisulComProfNapoleao] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao
+2022-07-14 23:36:29,097 [Worker-25: Launching Executing clean in C__Workspace_ProjetoRestaurantes_ProjetoUnisulComProfNapoleao] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2022-07-14 23:36:33,055 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:36:33,056 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:36:33,058 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:36:33,061 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:36:33,061 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:37:58,545 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-07-14 23:37:58,861 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.restaurantes:restaurantes:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\pom.xml.
+2022-07-14 23:37:59,180 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ProjetoUnisulComProfNapoleao/src/main/java because it overlaps with /ProjetoUnisulComProfNapoleao/src
+2022-07-14 23:37:59,180 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjetoUnisulComProfNapoleao/src/main/resources
+2022-07-14 23:37:59,188 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjetoUnisulComProfNapoleao/src/main/resources
+2022-07-14 23:37:59,189 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ProjetoUnisulComProfNapoleao/src/test/java because it overlaps with /ProjetoUnisulComProfNapoleao/src
+2022-07-14 23:37:59,497 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-07-14 23:37:59,875 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:37:59,875 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:37:59,878 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:37:59,881 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:37:59,882 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\ProjetoUnisulComProfNapoleao\src\test\resources
+2022-07-14 23:39:15,338 [main] ERROR o.e.m.j.u.i.DownloadSourcesActionDelegate - Could not schedule source download
+org.eclipse.jdt.core.JavaModelException: bin/br/com/jeffedev/restaurantes/core/entity [in ProjetoUnisulComProfNapoleao] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584) ~[na:na]
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:655) ~[na:na]
+	at org.eclipse.m2e.jdt.ui.internal.DownloadSourcesActionDelegate.setActiveEditor(DownloadSourcesActionDelegate.java:53) ~[na:na]
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:69) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$EditorContribution.editorChanged(EditorActionBuilder.java:77) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$ExternalContributor.setActiveEditor(EditorActionBuilder.java:123) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBars.partChanged(EditorActionBars.java:338) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivations(WorkbenchPage.java:323) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:212) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$2.run(PartServiceImpl.java:250) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:771) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:680) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:675) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3215) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3097) ~[na:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3095) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3065) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3056) ~[na:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:380) ~[na:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:184) ~[na:na]
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288) ~[na:na]
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254) ~[na:na]
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274) ~[na:na]
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252) ~[na:na]
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366) ~[na:na]
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545) ~[na:na]
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48) ~[na:na]
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+2022-07-14 23:39:32,994 [main] ERROR o.e.m.j.u.i.DownloadSourcesActionDelegate - Could not schedule source download
+org.eclipse.jdt.core.JavaModelException: bin/br/com/jeffedev/restaurantes/core/entity [in ProjetoUnisulComProfNapoleao] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584) ~[na:na]
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:655) ~[na:na]
+	at org.eclipse.m2e.jdt.ui.internal.DownloadSourcesActionDelegate.setActiveEditor(DownloadSourcesActionDelegate.java:53) ~[na:na]
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:69) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$EditorContribution.editorChanged(EditorActionBuilder.java:77) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$ExternalContributor.setActiveEditor(EditorActionBuilder.java:123) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBars.partChanged(EditorActionBars.java:338) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivations(WorkbenchPage.java:323) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:212) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$2.run(PartServiceImpl.java:250) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:771) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:680) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer.activate(AbstractPartRenderer.java:97) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.lambda$0(ContributedPartRenderer.java:63) ~[na:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1532) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Shell.WM_MOUSEACTIVATE(Shell.java:2462) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4790) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4847) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5034) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+2022-07-14 23:40:29,939 [main] ERROR o.e.m.j.u.i.DownloadSourcesActionDelegate - Could not schedule source download
+org.eclipse.jdt.core.JavaModelException: bin/br/com/jeffedev/core/bo [in ProjetoUnisulComProfNapoleao] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584) ~[na:na]
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:655) ~[na:na]
+	at org.eclipse.m2e.jdt.ui.internal.DownloadSourcesActionDelegate.setActiveEditor(DownloadSourcesActionDelegate.java:53) ~[na:na]
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:69) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$EditorContribution.editorChanged(EditorActionBuilder.java:77) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$ExternalContributor.setActiveEditor(EditorActionBuilder.java:123) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBars.partChanged(EditorActionBars.java:338) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivations(WorkbenchPage.java:323) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:212) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$2.run(PartServiceImpl.java:250) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:771) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:680) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:675) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3215) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3097) ~[na:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3095) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3065) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3056) ~[na:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:380) ~[na:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:184) ~[na:na]
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288) ~[na:na]
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254) ~[na:na]
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274) ~[na:na]
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252) ~[na:na]
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366) ~[na:na]
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545) ~[na:na]
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48) ~[na:na]
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+2022-07-14 23:40:35,919 [main] ERROR o.e.m.j.u.i.DownloadSourcesActionDelegate - Could not schedule source download
+org.eclipse.jdt.core.JavaModelException: bin/br/com/jeffedev/core/bo [in ProjetoUnisulComProfNapoleao] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584) ~[na:na]
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:655) ~[na:na]
+	at org.eclipse.m2e.jdt.ui.internal.DownloadSourcesActionDelegate.setActiveEditor(DownloadSourcesActionDelegate.java:53) ~[na:na]
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:69) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$EditorContribution.editorChanged(EditorActionBuilder.java:77) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$ExternalContributor.setActiveEditor(EditorActionBuilder.java:123) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBars.partChanged(EditorActionBars.java:338) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivations(WorkbenchPage.java:323) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:212) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$2.run(PartServiceImpl.java:250) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:771) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:680) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:675) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3215) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3097) ~[na:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3095) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3065) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3056) ~[na:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:380) ~[na:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:184) ~[na:na]
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288) ~[na:na]
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254) ~[na:na]
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274) ~[na:na]
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252) ~[na:na]
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366) ~[na:na]
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545) ~[na:na]
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48) ~[na:na]
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+2022-07-14 23:40:39,113 [main] ERROR o.e.m.j.u.i.DownloadSourcesActionDelegate - Could not schedule source download
+org.eclipse.jdt.core.JavaModelException: bin/br/com/jeffedev/core/bo [in ProjetoUnisulComProfNapoleao] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584) ~[na:na]
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:655) ~[na:na]
+	at org.eclipse.m2e.jdt.ui.internal.DownloadSourcesActionDelegate.setActiveEditor(DownloadSourcesActionDelegate.java:53) ~[na:na]
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:69) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$EditorContribution.editorChanged(EditorActionBuilder.java:77) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$ExternalContributor.setActiveEditor(EditorActionBuilder.java:123) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBars.partChanged(EditorActionBars.java:338) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivations(WorkbenchPage.java:323) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:212) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$2.run(PartServiceImpl.java:250) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:771) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:680) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer.activate(AbstractPartRenderer.java:97) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.lambda$0(ContributedPartRenderer.java:63) ~[na:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1532) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1495) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2956) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.wmSetFocus(Widget.java:2289) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.WM_SETFOCUS(Control.java:5427) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4818) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5026) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.SetFocus(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:1093) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3441) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1081) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1079) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.setFocus(ClassFileEditor.java:955) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:226) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:323) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:245) ~[na:na]
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:147) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:790) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$1.setFocus(ContributedPartRenderer.java:106) ~[na:na]
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:379) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2683) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1051) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3954) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3236) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3244) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1882) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:331) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+2022-07-14 23:40:41,237 [main] ERROR o.e.m.j.u.i.DownloadSourcesActionDelegate - Could not schedule source download
+org.eclipse.jdt.core.JavaModelException: bin/br/com/jeffedev/restaurantes/core/entity [in ProjetoUnisulComProfNapoleao] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584) ~[na:na]
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530) ~[na:na]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:655) ~[na:na]
+	at org.eclipse.m2e.jdt.ui.internal.DownloadSourcesActionDelegate.setActiveEditor(DownloadSourcesActionDelegate.java:53) ~[na:na]
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:69) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$EditorContribution.editorChanged(EditorActionBuilder.java:77) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBuilder$ExternalContributor.setActiveEditor(EditorActionBuilder.java:123) ~[na:na]
+	at org.eclipse.ui.internal.EditorActionBars.partChanged(EditorActionBars.java:338) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivations(WorkbenchPage.java:323) ~[na:na]
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:212) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$2.run(PartServiceImpl.java:250) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:771) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:680) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer.activate(AbstractPartRenderer.java:97) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.lambda$0(ContributedPartRenderer.java:63) ~[na:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1532) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1495) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2956) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.wmSetFocus(Widget.java:2289) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.WM_SETFOCUS(Control.java:5427) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4818) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5026) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.internal.win32.OS.SetFocus(Native Method) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:1093) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3441) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1081) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1079) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.setFocus(ClassFileEditor.java:955) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:226) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:323) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:245) ~[na:na]
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:147) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:790) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$1.setFocus(ContributedPartRenderer.java:106) ~[na:na]
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:379) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2683) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1051) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3954) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3236) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3244) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1882) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:331) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+2022-07-14 23:51:14,831 [Worker-34: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.jeffedev.restaurantes:restaurantes:0.0.1-SNAPSHOT @ C:\Workspace\ProjetoRestaurantes\restaurantes\pom.xml.
+2022-07-14 23:51:16,647 [Worker-34: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.pom
+2022-07-14 23:51:16,951 [Worker-34: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.pom
+2022-07-14 23:51:17,399 [Worker-34: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.jar
+2022-07-14 23:51:17,951 [Worker-34: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.jar
+2022-07-14 23:51:20,409 [Worker-34: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restaurantes/src/main/java
+2022-07-14 23:51:20,409 [Worker-34: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /restaurantes/src/main/resources
+2022-07-14 23:51:20,415 [Worker-34: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /restaurantes/src/main/resources
+2022-07-14 23:51:20,421 [Worker-34: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restaurantes/src/test/java
+2022-07-14 23:51:22,013 [Worker-38: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1-sources.jar
+2022-07-14 23:51:22,250 [Worker-34: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2022-07-14 23:51:22,485 [Worker-38: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1-sources.jar
+2022-07-14 23:51:22,526 [Worker-38: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-devtools:2.7.1
+2022-07-14 23:51:23,048 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:51:23,048 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:51:23,049 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:51:23,063 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:51:23,066 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:51:23,067 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:51:23,067 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-14 23:52:24,956 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:52:24,957 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:52:24,965 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:52:24,971 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:52:24,973 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:52:24,973 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:52:24,974 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-14 23:53:01,660 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:53:01,660 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:53:01,661 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:53:01,691 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:53:01,694 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:53:01,694 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:53:01,694 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-14 23:54:19,203 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:54:19,203 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:54:19,204 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:54:19,234 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:54:19,237 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:54:19,238 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:54:19,238 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-14 23:57:40,000 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:57:40,000 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:57:40,001 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-14 23:57:40,009 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-14 23:57:40,012 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-14 23:57:40,013 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-14 23:57:40,013 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:01:02,761 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:01:02,762 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:01:02,762 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:01:02,770 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:01:02,773 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:01:02,773 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:01:02,773 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:02:41,047 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:02:41,047 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:02:41,048 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:02:41,059 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:02:41,063 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:02:41,064 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:02:41,064 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:04:14,062 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:14,063 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:14,064 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:04:14,071 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:04:14,073 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:14,073 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:14,073 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:04:22,868 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:22,868 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:22,869 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:04:22,875 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:04:22,876 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:22,876 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:22,876 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:04:33,483 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:33,483 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:33,484 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:04:33,492 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:04:33,493 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:33,493 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:33,494 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:04:41,587 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:41,587 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:41,588 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:04:41,594 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:04:41,596 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:04:41,596 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:04:41,597 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:05:21,930 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:05:21,930 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:05:21,931 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:05:21,937 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:05:21,938 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:05:21,938 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:05:21,939 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:05:43,095 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:05:43,095 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:05:43,096 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:05:43,102 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:05:43,104 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:05:43,104 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:05:43,104 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:05:55,026 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:05:55,027 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:05:55,028 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:05:55,063 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:05:55,066 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:05:55,066 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:05:55,067 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:09:12,280 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:09:12,281 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:09:12,281 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:09:12,287 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:09:12,289 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:09:12,289 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:09:12,290 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:10:01,114 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:10:01,114 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:10:01,115 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:10:01,143 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:10:01,146 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:10:01,146 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:10:01,146 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:10:07,065 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:10:07,065 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:10:07,066 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:10:07,072 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:10:07,074 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:10:07,074 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:10:07,074 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:10:36,514 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:10:36,514 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:10:36,515 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:10:36,527 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:10:36,529 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:10:36,529 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:10:36,529 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:11:48,266 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:11:48,266 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:11:48,267 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:11:48,276 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:11:48,278 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:11:48,278 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:11:48,278 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:11:52,944 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:11:52,944 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:11:52,945 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:11:52,954 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:11:52,956 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:11:52,956 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:11:52,956 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:12:01,535 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:12:01,535 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:12:01,536 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:12:01,542 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:12:01,544 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:12:01,544 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:12:01,545 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:13:29,537 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:13:29,537 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:13:29,538 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:13:29,548 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:13:29,550 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:13:29,551 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:13:29,551 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:14:44,951 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:14:44,951 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:14:44,951 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:14:44,967 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:14:44,969 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:14:44,969 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:14:44,969 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
+2022-07-15 00:14:58,728 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:14:58,728 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:14:58,729 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-15 00:14:58,739 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-15 00:14:58,742 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-15 00:14:58,742 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-15 00:14:58,742 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Workspace\ProjetoRestaurantes\restaurantes\src\test\resources
