@@ -12,7 +12,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
@@ -39,7 +38,7 @@ public class TelaCadastroUsuario extends JFrame {
 	public TelaCadastroUsuario() {
 		setTitle("Cadastro de Usuário");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 533, 501);
+		setBounds(100, 100, 533, 294);
 		contentPane = new JPanel();
 		contentPane.setToolTipText("");
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -94,7 +93,7 @@ public class TelaCadastroUsuario extends JFrame {
 					usuario.setEmail(fieldEmail.getText());
 					
 					try {
-						String msg = new UsuarioService().salvarUsuario(usuario);
+						String msg = new UsuarioService().salvar(usuario);
 						limparCampos();
 						JOptionPane.showMessageDialog(null, msg);					
 					}catch(NegocioException e1) {
@@ -111,13 +110,13 @@ public class TelaCadastroUsuario extends JFrame {
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		
-		JButton btnCadastrarEndereos = new JButton("Cadastrar Endereços");
+		JButton btnCadastrarEndereos = new JButton("Mais dados Cliente");
 		btnCadastrarEndereos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						try {
-							TelaCadastroDeEnderecosUsuario frameCadastroEnderecos = new TelaCadastroDeEnderecosUsuario();
+							TelaCadastroDeMaisDadosDoCliente frameCadastroEnderecos = new TelaCadastroDeMaisDadosDoCliente();
 							frameCadastroEnderecos.setVisible(true);
 						} catch (Exception e) {
 							e.printStackTrace();
@@ -128,11 +127,6 @@ public class TelaCadastroUsuario extends JFrame {
 		});
 		btnCadastrarEndereos.setIcon(new ImageIcon(TelaCadastroUsuario.class.getResource("/resource/mais.png")));
 		btnCadastrarEndereos.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		
-		JList list = new JList();
-		
-		JLabel lblNewLabel_2_1 = new JLabel("Endereços Cadastrados:");
-		lblNewLabel_2_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -143,7 +137,7 @@ public class TelaCadastroUsuario extends JFrame {
 							.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 475, GroupLayout.PREFERRED_SIZE)
 							.addContainerGap())
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
 								.addGroup(gl_contentPane.createSequentialGroup()
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 										.addComponent(lblNewLabel_2)
@@ -164,14 +158,10 @@ public class TelaCadastroUsuario extends JFrame {
 									.addComponent(labelNomeValidacao))
 								.addComponent(lblNewLabel_1)
 								.addComponent(fieldCodigo, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
-								.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
-									.addComponent(lblNewLabel_2_1)
-									.addPreferredGap(ComponentPlacement.RELATED, 278, Short.MAX_VALUE)
-									.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-								.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+								.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addGroup(gl_contentPane.createSequentialGroup()
 									.addPreferredGap(ComponentPlacement.RELATED, 462, Short.MAX_VALUE)
-									.addComponent(lblNewLabel_5))
-								.addComponent(list, GroupLayout.DEFAULT_SIZE, 493, Short.MAX_VALUE))
+									.addComponent(lblNewLabel_5)))
 							.addGap(35))))
 		);
 		gl_contentPane.setVerticalGroup(
@@ -204,17 +194,9 @@ public class TelaCadastroUsuario extends JFrame {
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 34, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnCadastrarEndereos, GroupLayout.PREFERRED_SIZE, 34, GroupLayout.PREFERRED_SIZE))
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGap(39)
-							.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addGap(3))
-						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
-							.addGap(24)
-							.addComponent(lblNewLabel_2_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(list, GroupLayout.PREFERRED_SIZE, 159, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap())
+					.addGap(39)
+					.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addGap(173))
 		);
 		contentPane.setLayout(gl_contentPane);
 	}

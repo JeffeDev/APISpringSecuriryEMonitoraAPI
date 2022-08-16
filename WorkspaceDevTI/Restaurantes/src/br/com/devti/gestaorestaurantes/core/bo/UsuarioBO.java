@@ -8,7 +8,7 @@ import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 
 public class UsuarioBO {
 
-	public String salvarUsuario(UsuarioEntity usuario) throws NegocioException {
+	public String salvar(UsuarioEntity usuario) throws NegocioException {
 		System.out.println("Camada BO, processando informações");
 		
 		// TODO Poderia criptografar a senha
@@ -19,11 +19,11 @@ public class UsuarioBO {
 		}
 		
 		UsuarioDAO udao = new UsuarioDAO();		
-		return udao.salvarUsuario(usuario);
+		return udao.salvar(usuario);
 	}
 
-	public static List<UsuarioEntity> listarUsuario() throws NegocioException {
-		return UsuarioDAO.listarUsuario();
+	public static List<UsuarioEntity> listar() throws NegocioException {
+		return UsuarioDAO.listar();
 	}
 	
 }

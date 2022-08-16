@@ -2,24 +2,23 @@ package br.com.devti.gestaorestaurantes.core.entity;
 
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Objects;
 
 public class LoteCompraEntity implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private Long idLote;
+	private Long id;
 	private String numeroLote;
 	private String numeroNFe;
-	private LocalDate dtFabricacao;
-	private LocalDate dtValidade;
-	private LocalDate dtCompra;
+	private String dtFabricacao;
+	private String dtValidade;
+	private String dtCompra;
 	
 	public LoteCompraEntity() {
 	}
 
-	public LoteCompraEntity(String numeroLote, String numeroNFe, LocalDate dataFabricacao, LocalDate dataValidade,
-			LocalDate dataCompra) {
+	public LoteCompraEntity(String numeroLote, String numeroNFe, String dataFabricacao, String dataValidade,
+			String dataCompra) {
 		this.numeroLote = numeroLote;
 		this.numeroNFe = numeroNFe;
 		this.dtFabricacao = dataFabricacao;
@@ -27,8 +26,8 @@ public class LoteCompraEntity implements Serializable{
 		this.dtCompra = dataCompra;
 	}
 
-	public Long getIdLote() {
-		return idLote;
+	public Long getId() {
+		return id;
 	}
 
 	public String getNumeroLote() {
@@ -39,21 +38,58 @@ public class LoteCompraEntity implements Serializable{
 		return numeroNFe;
 	}
 
-	public LocalDate getDataFabricacao() {
+	public String getDataFabricacao() {
 		return dtFabricacao;
 	}
 
-	public LocalDate getDataValidade() {
+	public String getDataValidade() {
 		return dtValidade;
 	}
 
-	public LocalDate getDataCompra() {
+	public String getDataCompra() {
 		return dtCompra;
+	}
+	
+
+	public String getDtFabricacao() {
+		return dtFabricacao;
+	}
+
+	public String getDtValidade() {
+		return dtValidade;
+	}
+
+	public String getDtCompra() {
+		return dtCompra;
+	}
+
+	public void setId(Long idLote) {
+		this.id = idLote;
+	}
+
+	public void setNumeroLote(String numeroLote) {
+		this.numeroLote = numeroLote;
+	}
+
+	public void setNumeroNFe(String numeroNFe) {
+		this.numeroNFe = numeroNFe;
+	}
+
+	public void setDtFabricacao(String dtFabricacao) {
+		this.dtFabricacao = dtFabricacao;
+	}
+
+	public void setDtValidade(String dtValidade) {
+		this.dtValidade = dtValidade;
+	}
+
+	public void setDtCompra(String dtCompra) {
+		this.dtCompra = dtCompra;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(idLote);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -65,7 +101,7 @@ public class LoteCompraEntity implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		LoteCompraEntity other = (LoteCompraEntity) obj;
-		return Objects.equals(idLote, other.idLote);
+		return Objects.equals(id, other.id);
 	}
 	
 

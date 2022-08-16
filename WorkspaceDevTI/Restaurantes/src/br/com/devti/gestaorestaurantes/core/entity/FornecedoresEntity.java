@@ -2,51 +2,40 @@ package br.com.devti.gestaorestaurantes.core.entity;
 
 
 import java.io.Serializable;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
-import br.com.devti.gestaorestaurantes.core.entity.herdam.EmpresaCore;
-import br.com.devti.gestaorestaurantes.core.entity.herdam.EnderecoCore;
-
-public class FornecedoresEntity extends EmpresaCore implements Serializable{
+public class FornecedoresEntity implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private Long idFornecedor;
+	private Long id;
 	private String nomeFornecedor;
-	private LocalDate dtInicioParceria;
+	private String dtInicioParceria;
 	
-	private List<EnderecoCore> endereco = new ArrayList<EnderecoCore>();
-
 	public FornecedoresEntity() {
 	}
 
-	public FornecedoresEntity(String nomeFornecedor, LocalDate dtInicioParceria, List<EnderecoCore> endereco) {
-		super();
-		this.nomeFornecedor = nomeFornecedor;
-		this.dtInicioParceria = dtInicioParceria;
-		this.endereco = endereco;
-	}
-
-	public Long getIdFornecedor() {
-		return idFornecedor;
+	public Long getId() {
+		return id;
 	}
 
 	public String getNomeFornecedor() {
 		return nomeFornecedor;
 	}
 
-	public List<EnderecoCore> getEndereco() {
-		return endereco;
-	}
-
-	public LocalDate getDtInicioParceria() {
+	public String getDtInicioParceria() {
 		return dtInicioParceria;
-	}
-
-	public void setDtInicioParceria(LocalDate dtInicioParceria) {
-		this.dtInicioParceria = dtInicioParceria;
 	}
 	
 
+	public void setId(Long idFornecedor) {
+		this.id = idFornecedor;
+	}
+
+	public void setNomeFornecedor(String nomeFornecedor) {
+		this.nomeFornecedor = nomeFornecedor;
+	}
+
+	public void setDtInicioParceria(String data) {
+		this.dtInicioParceria = data;
+	}
+	
 }

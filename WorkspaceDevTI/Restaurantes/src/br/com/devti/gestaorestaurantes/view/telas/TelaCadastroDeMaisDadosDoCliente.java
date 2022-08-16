@@ -17,7 +17,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 
-public class TelaCadastroDeEnderecosUsuario extends JFrame {
+public class TelaCadastroDeMaisDadosDoCliente extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -41,7 +41,7 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 //		EventQueue.invokeLater(new Runnable() {
 //			public void run() {
 //				try {
-//					TelaCadastroDeEnderecosUsuario frame = new TelaCadastroDeEnderecosUsuario();
+//					TelaCadastroDeMaisDadosDoCliente frame = new TelaCadastroDeMaisDadosDoCliente();
 //					frame.setVisible(true);
 //				} catch (Exception e) {
 //					e.printStackTrace();
@@ -53,7 +53,7 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public TelaCadastroDeEnderecosUsuario() {
+	public TelaCadastroDeMaisDadosDoCliente() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 652, 481);
 		contentPane = new JPanel();
@@ -83,11 +83,11 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		
 		JButton btnNewButton = new JButton("Salvar");
-		btnNewButton.setIcon(new ImageIcon(TelaCadastroDeEnderecosUsuario.class.getResource("/resource/caixa-de-selecao.png")));
+		btnNewButton.setIcon(new ImageIcon(TelaCadastroDeMaisDadosDoCliente.class.getResource("/resource/caixa-de-selecao.png")));
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
 		JButton btnFechar = new JButton("Fechar");
-		btnFechar.setIcon(new ImageIcon(TelaCadastroDeEnderecosUsuario.class.getResource("/resource/cruz.png")));
+		btnFechar.setIcon(new ImageIcon(TelaCadastroDeMaisDadosDoCliente.class.getResource("/resource/cruz.png")));
 		btnFechar.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
@@ -189,10 +189,6 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 		textField_8 = new JTextField();
 		textField_8.setColumns(10);
 		
-		JComboBox comboBox = new JComboBox();
-		
-		JCheckBox chckbxNewCheckBox = new JCheckBox("Local Entrega");
-		
 		JTextArea textArea = new JTextArea();
 		textArea.setLineWrap(true);
 		
@@ -204,36 +200,20 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 		JLabel lblNewLabel_2_1_8_1_1 = new JLabel("Tipo Endereço");
 		lblNewLabel_2_1_8_1_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
-		JLabel lblNewLabel_1_1 = new JLabel("Código");
-		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		
 		textField_6 = new JTextField();
-		textField_6.setEnabled(false);
-		textField_6.setEditable(false);
 		textField_6.setColumns(10);
+		
+		JLabel lblNewLabel_2_1_5_1 = new JLabel("Estado");
+		lblNewLabel_2_1_5_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
 			gl_panel.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel.createSequentialGroup()
-					.addGap(10)
-					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_panel.createSequentialGroup()
-							.addComponent(lblNewLabel_2_1_5, GroupLayout.PREFERRED_SIZE, 120, GroupLayout.PREFERRED_SIZE)
-							.addGap(213)
-							.addComponent(lblNewLabel_2_1_6, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.UNRELATED)
-							.addComponent(lblNewLabel_2_1_7, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap())
-						.addGroup(gl_panel.createSequentialGroup()
-							.addComponent(textField_5, GroupLayout.PREFERRED_SIZE, 323, GroupLayout.PREFERRED_SIZE)
-							.addGap(10)
-							.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-							.addComponent(textField_7, GroupLayout.PREFERRED_SIZE, 196, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap())
+					.addGap(88)
+					.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
 						.addGroup(gl_panel.createSequentialGroup()
 							.addComponent(lblNewLabel_2_1_8)
-							.addGap(223)
+							.addPreferredGap(ComponentPlacement.RELATED, 384, Short.MAX_VALUE)
 							.addComponent(lblNewLabel_2_1_8_1, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE))
 						.addGroup(gl_panel.createSequentialGroup()
 							.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
@@ -243,7 +223,7 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 255, GroupLayout.PREFERRED_SIZE)
 							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-						.addGroup(Alignment.TRAILING, gl_panel.createSequentialGroup()
+						.addGroup(gl_panel.createSequentialGroup()
 							.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_panel.createSequentialGroup()
 									.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
@@ -256,23 +236,39 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 								.addGroup(gl_panel.createSequentialGroup()
 									.addComponent(lblNewLabel_2_1)
 									.addGap(93)
-									.addComponent(lblNewLabel_2_1_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-									.addGap(58)
-									.addComponent(lblNewLabel_1_1, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE)
-									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)))
-							.addPreferredGap(ComponentPlacement.RELATED)
+									.addComponent(lblNewLabel_2_1_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)))
+							.addGap(58)
 							.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
-								.addGroup(gl_panel.createSequentialGroup()
-									.addComponent(chckbxNewCheckBox)
-									.addGap(34))
 								.addComponent(lblNewLabel_2_1_4, Alignment.LEADING)
-								.addComponent(textField_4, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE))
+								.addComponent(textField_4, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE))
 							.addContainerGap())
 						.addGroup(gl_panel.createSequentialGroup()
 							.addComponent(textField, GroupLayout.PREFERRED_SIZE, 108, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(textField_1, GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE)
+							.addComponent(textField_1, GroupLayout.DEFAULT_SIZE, 478, Short.MAX_VALUE)
+							.addContainerGap())
+						.addGroup(gl_panel.createSequentialGroup()
+							.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+								.addGroup(gl_panel.createSequentialGroup()
+									.addComponent(textField_5, GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
+									.addPreferredGap(ComponentPlacement.UNRELATED))
+								.addGroup(gl_panel.createSequentialGroup()
+									.addPreferredGap(ComponentPlacement.RELATED)
+									.addComponent(lblNewLabel_2_1_5, GroupLayout.PREFERRED_SIZE, 120, GroupLayout.PREFERRED_SIZE)
+									.addGap(176)))
+							.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+								.addGroup(Alignment.TRAILING, gl_panel.createSequentialGroup()
+									.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, 86, GroupLayout.PREFERRED_SIZE)
+									.addPreferredGap(ComponentPlacement.UNRELATED))
+								.addGroup(gl_panel.createSequentialGroup()
+									.addComponent(lblNewLabel_2_1_5_1, GroupLayout.PREFERRED_SIZE, 63, GroupLayout.PREFERRED_SIZE)
+									.addGap(33)))
+							.addGroup(gl_panel.createParallelGroup(Alignment.LEADING, false)
+								.addGroup(Alignment.TRAILING, gl_panel.createSequentialGroup()
+									.addComponent(lblNewLabel_2_1_6, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
+									.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+									.addComponent(lblNewLabel_2_1_7, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
+								.addComponent(textField_7, Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 196, GroupLayout.PREFERRED_SIZE))
 							.addContainerGap())))
 		);
 		gl_panel.setVerticalGroup(
@@ -280,26 +276,12 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 				.addGroup(gl_panel.createSequentialGroup()
 					.addGap(7)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_panel.createSequentialGroup()
-							.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
-								.addGroup(gl_panel.createSequentialGroup()
-									.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-										.addGroup(gl_panel.createSequentialGroup()
-											.addGap(12)
-											.addComponent(lblNewLabel_2_1))
-										.addGroup(gl_panel.createSequentialGroup()
-											.addGap(12)
-											.addComponent(lblNewLabel_2_1_1)))
-									.addGap(6))
-								.addGroup(gl_panel.createSequentialGroup()
-									.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
-										.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-										.addComponent(lblNewLabel_1_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE))
-									.addGap(18)))
-							.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
-								.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-						.addComponent(chckbxNewCheckBox))
+						.addComponent(lblNewLabel_2_1)
+						.addComponent(lblNewLabel_2_1_1))
+					.addGap(6)
+					.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
+						.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
@@ -311,25 +293,26 @@ public class TelaCadastroDeEnderecosUsuario extends JFrame {
 						.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(textField_4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
+					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+						.addComponent(lblNewLabel_2_1_7)
 						.addComponent(lblNewLabel_2_1_5)
 						.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
-							.addComponent(lblNewLabel_2_1_6)
-							.addComponent(lblNewLabel_2_1_7)))
-					.addGap(6)
+							.addComponent(lblNewLabel_2_1_5_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
+							.addComponent(lblNewLabel_2_1_6)))
+					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
+							.addComponent(textField_7, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+							.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 						.addGroup(gl_panel.createSequentialGroup()
 							.addGap(1)
-							.addComponent(textField_5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-						.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
-							.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addComponent(textField_7, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-					.addGap(6)
+							.addComponent(textField_5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-						.addComponent(lblNewLabel_2_1_8)
-						.addComponent(lblNewLabel_2_1_8_1))
-					.addGap(6)
+						.addComponent(lblNewLabel_2_1_8_1)
+						.addComponent(lblNewLabel_2_1_8))
+					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_panel.createSequentialGroup()
 							.addComponent(textField_8, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)

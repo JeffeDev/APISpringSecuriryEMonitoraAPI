@@ -28,6 +28,7 @@ public class FamiliaProdutoEntity implements Serializable{
 		FamiliaProdutoEntity other = (FamiliaProdutoEntity) obj;
 		return Objects.equals(idFamiliaProduto, other.idFamiliaProduto);
 	}
+	
 	public String getDescricaoFamiliaProduto() {
 		return descricaoFamiliaProduto;
 	}

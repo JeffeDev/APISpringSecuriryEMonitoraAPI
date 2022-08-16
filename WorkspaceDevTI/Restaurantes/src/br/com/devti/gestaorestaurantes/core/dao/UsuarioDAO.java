@@ -12,7 +12,7 @@ import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 
 public class UsuarioDAO {
 
-	public String salvarUsuario(UsuarioEntity usuario) throws NegocioException{
+	public String salvar(UsuarioEntity usuario) throws NegocioException{
 						
  		String sql = "INSERT INTO usuario (NOME, LOGIN, SENHA, EMAIL) VALUES (?,?,?,?)";
  		
@@ -45,33 +45,29 @@ public class UsuarioDAO {
 		return "Usuario cadastrado com sucesso no banco de dados";
 	}
 
-	public static List<UsuarioEntity> listarUsuario() throws NegocioException {
-		String sql = "SELECT us.id_Usuario, us.nome, us.login, us.email, us.celular, us.cpf, us.dt_Nascimento, us.cidade_Nascimento FROM usuario us ";
+	public static List<UsuarioEntity> listar() throws NegocioException {
+		String sql = "SELECT us.id, us.nome, us.login, us.email, us.celular, us.cpf, us.dt_Nascimento, us.cidade_Nascimento FROM usuario us ";
 		PreparedStatement ps = null;
 		ResultSet rs;
-		List<UsuarioEntity> listagemUsuarios = new ArrayList<>();
+		List<UsuarioEntity> listagem = new ArrayList<>();
  		try {
 		    ps = ConexaoMySQL.getConexao().prepareStatement(sql);
             rs = ps.executeQuery();
             
             while(rs.next()) {
             	UsuarioEntity usuario = new UsuarioEntity();
-            	usuario.setCodigo( rs.getLong("ID_USUARIO"));
+            	usuario.setId(rs.getLong("ID"));
             	usuario.setNome(rs.getString("NOME"));
             	usuario.setLogin(rs.getString("login"));
             	usuario.setEmail(rs.getString("email"));
-            	usuario.setCelular(rs.getString("celular"));
-            	usuario.setCpf(rs.getString("cpf"));
-            	usuario.setDtNascimento(rs.getDate("DT_NASCIMENTO"));
-            	usuario.setCidadeNascimento(rs.getString("cidade_Nascimento"));
-            	listagemUsuarios.add(usuario);
+            	listagem.add(usuario);
             }
             ps.close(); 
             
         } catch (SQLException ex){
         	throw new NegocioException("Erro ao cadastrar usuário !" + ex.getMessage());
         }
-		return listagemUsuarios;
+		return listagem;
 	}
 	
 }

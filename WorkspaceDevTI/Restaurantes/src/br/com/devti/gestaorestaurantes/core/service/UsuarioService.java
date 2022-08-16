@@ -8,14 +8,14 @@ import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 
 public class UsuarioService {
 
-	public String salvarUsuario(UsuarioEntity usuario) throws NegocioException {
+	public String salvar(UsuarioEntity usuario) throws NegocioException {
 		System.out.println("Entrando no backend, camada service...");
 	    UsuarioBO usuarioBo = new UsuarioBO();
-	    return usuarioBo.salvarUsuario(usuario);
+	    return usuarioBo.salvar(usuario);
 	}
 	
-	public List<UsuarioEntity> listarUsuario() throws NegocioException{
-		return UsuarioBO.listarUsuario();
+	public List<UsuarioEntity> listar() throws NegocioException{
+		return UsuarioBO.listar();
 	}
 	
 }

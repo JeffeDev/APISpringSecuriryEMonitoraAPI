@@ -6,15 +6,17 @@ import java.util.Objects;
 public class RecursoEntity implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	private Long codigo;
+	private Long id;
 	private String nomeRecurso;
 	private String caminhoTela;
 	
-	public Long getCodigo() {
-		return codigo;
+	
+	
+	public Long getid() {
+		return id;
 	}
-	public void setCodigo(Long codigo) {
-		this.codigo = codigo;
+	public void setid(Long id) {
+		this.id = id;
 	}
 	public String getNomeRecurso() {
 		return nomeRecurso;
@@ -31,7 +33,7 @@ public class RecursoEntity implements Serializable{
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(codigo);
+		return Objects.hash(id);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -42,7 +44,7 @@ public class RecursoEntity implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		RecursoEntity other = (RecursoEntity) obj;
-		return Objects.equals(codigo, other.codigo);
+		return Objects.equals(id, other.id);
 	}	
 	
 }

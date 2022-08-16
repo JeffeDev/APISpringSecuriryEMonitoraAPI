@@ -38,7 +38,7 @@ public class Principal {
 //		}	
 		
 		try {
-		    List<UsuarioEntity> usuarios = new UsuarioService().listarUsuario();
+		    List<UsuarioEntity> usuarios = new UsuarioService().listar();
 		    
 		    for (UsuarioEntity usuarioEntity : usuarios) {
 				System.out.println(usuarioEntity);

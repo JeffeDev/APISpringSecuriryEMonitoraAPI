@@ -8,7 +8,7 @@ public class ConexaoMySQL {
 
 	private static final String urlDb = "jdbc:mysql://localhost:3306/gestao_usuario_tarde"; 
 	private static final String userDb = "root";
-	private static final String passDb = "root"; //ATENCAO - eu orientei que a senha fosse root
+	private static final String passDb = "root"; 
 	
 	private static Connection conn;
 	

@@ -6,14 +6,14 @@ import java.util.Objects;
 public class GrupoUsuarioEntity implements Serializable{
 	private static final long serialVersionUID = 1L;
 
-	private Long idGrupoUsuario;
+	private Long id;
 	private String nomeGrupo;
 	
-	public Long getCodigo() {
-		return idGrupoUsuario;
+	public Long getId() {
+		return id;
 	}
-	public void setCodigo(Long codigo) {
-		this.idGrupoUsuario = codigo;
+	public void setId(Long codigo) {
+		this.id = codigo;
 	}
 	public String getNomeGrupo() {
 		return nomeGrupo;
@@ -24,7 +24,7 @@ public class GrupoUsuarioEntity implements Serializable{
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(idGrupoUsuario);
+		return Objects.hash(id);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -35,7 +35,7 @@ public class GrupoUsuarioEntity implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		GrupoUsuarioEntity other = (GrupoUsuarioEntity) obj;
-		return Objects.equals(idGrupoUsuario, other.idGrupoUsuario);
+		return Objects.equals(id, other.id);
 	}
 	
 	

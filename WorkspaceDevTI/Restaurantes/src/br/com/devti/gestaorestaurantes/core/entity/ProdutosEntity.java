@@ -3,84 +3,58 @@ package br.com.devti.gestaorestaurantes.core.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.Objects;
 
 public class ProdutosEntity implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private Long idProduto;
+	private Long id;
 	
 	private String nomeProduto;
-	
-	private Long idFamiliaProduto;
 	private String codigoDeBarras;
-	
-	private Long idFornecedor;
 	private BigDecimal precoCompra;
 	private BigDecimal precoVenda;
 	private BigDecimal margemLucro;
 	
-	private Long idLocalImpressao;
-	private LocalDate dtUltimaCompra;
-	private LocalDate dtUltimaVenda;
+	private String dtUltimaCompra;
+	private String dtUltimaVenda;
 	
+	private Long idFamiliaProduto;
+	private Long idFornecedor;
 	private Long idLoteCompra;
+	private Long idLocalImpressao;
 
 	public ProdutosEntity() {
 	}
+	
 
-	public ProdutosEntity(String nomeProduto, Long idFamiliaProduto, String codigoDeBarras, Long idFornecedor,
-			BigDecimal precoCompra, BigDecimal precoVenda, BigDecimal margemLucro, Long idLocalImpressao,
-			LocalDate dtUltimaCompra, LocalDate dtUltimaVenda, Long idLoteCompra) {
+	public ProdutosEntity(String nomeProduto, String codigoDeBarras, BigDecimal precoCompra, BigDecimal precoVenda,
+			BigDecimal margemLucro, String dtUltimaCompra, String dtUltimaVenda, Long idFamiliaProduto,
+			Long idLoteCompra, Long idLocalImpressao, Long idFornecedor) {
+		super();
 		this.nomeProduto = nomeProduto;
-		this.idFamiliaProduto = idFamiliaProduto;
 		this.codigoDeBarras = codigoDeBarras;
-		this.idFornecedor = idFornecedor;
 		this.precoCompra = precoCompra;
 		this.precoVenda = precoVenda;
 		this.margemLucro = margemLucro;
-		this.idLocalImpressao = idLocalImpressao;
 		this.dtUltimaCompra = dtUltimaCompra;
 		this.dtUltimaVenda = dtUltimaVenda;
+		this.idFamiliaProduto = idFamiliaProduto;
 		this.idLoteCompra = idLoteCompra;
-	}
-	
-	@Override
-	public int hashCode() {
-		return Objects.hash(idProduto);
+		this.idLocalImpressao = idLocalImpressao;
+		this.idFornecedor = idFornecedor;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		ProdutosEntity other = (ProdutosEntity) obj;
-		return Objects.equals(idProduto, other.idProduto);
-	}
 
-	public Long getIdProduto() {
-		return idProduto;
+	public Long getId() {
+		return id;
 	}
 
 	public String getNomeProduto() {
 		return nomeProduto;
 	}
 
-	public Long getIdFamiliaProduto() {
-		return idFamiliaProduto;
-	}
-
 	public String getCodigoDeBarras() {
 		return codigoDeBarras;
-	}
-
-	public Long getIdFornecedor() {
-		return idFornecedor;
 	}
 
 	public BigDecimal getPrecoCompra() {
@@ -95,20 +69,89 @@ public class ProdutosEntity implements Serializable{
 		return margemLucro;
 	}
 
-	public Long getIdLocalImpressao() {
-		return idLocalImpressao;
-	}
-
-	public LocalDate getDtUltimaCompra() {
+	public String getDtUltimaCompra() {
 		return dtUltimaCompra;
 	}
 
-	public LocalDate getDtUltimaVenda() {
+	public String getDtUltimaVenda() {
 		return dtUltimaVenda;
+	}
+
+	public Long getIdFamiliaProduto() {
+		return idFamiliaProduto;
 	}
 
 	public Long getIdLoteCompra() {
 		return idLoteCompra;
 	}
+
+	public Long getIdLocalImpressao() {
+		return idLocalImpressao;
+	}
+
+	public Long getIdFornecedor() {
+		return idFornecedor;
+	}
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
+
+
+	public void setCodigoDeBarras(String codigoDeBarras) {
+		this.codigoDeBarras = codigoDeBarras;
+	}
+
+
+	public void setPrecoCompra(BigDecimal precoCompra) {
+		this.precoCompra = precoCompra;
+	}
+
+
+	public void setPrecoVenda(BigDecimal precoVenda) {
+		this.precoVenda = precoVenda;
+	}
+
+
+	public void setMargemLucro(BigDecimal margemLucro) {
+		this.margemLucro = margemLucro;
+	}
+
+
+	public void setDtUltimaCompra(String dtUltimaCompra) {
+		this.dtUltimaCompra = dtUltimaCompra;
+	}
+
+
+	public void setDtUltimaVenda(String dtUltimaVenda) {
+		this.dtUltimaVenda = dtUltimaVenda;
+	}
+
+
+	public void setIdFamiliaProduto(Long idFamiliaProduto) {
+		this.idFamiliaProduto = idFamiliaProduto;
+	}
+
+
+	public void setIdFornecedor(Long idFornecedor) {
+		this.idFornecedor = idFornecedor;
+	}
+
+
+	public void setIdLoteCompra(Long idLoteCompra) {
+		this.idLoteCompra = idLoteCompra;
+	}
+
+
+	public void setIdLocalImpressao(Long idLocalImpressao) {
+		this.idLocalImpressao = idLocalImpressao;
+	}
 	
+
 }
