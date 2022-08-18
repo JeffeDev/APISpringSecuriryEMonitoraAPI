@@ -69,6 +69,19 @@ public class ListarClientes {
 		frame.getContentPane().add(painelLateral, BorderLayout.WEST);
 		
 		JButton btnExcluir = new JButton("Excluir Cliente");
+		btnExcluir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				UsuarioEntity usuarioEntity = usuarios.get(table.getSelectedRow());
+				
+				try {
+					new UsuarioService().excluir(usuarioEntity.getId());
+				} catch (NegocioException e1) {
+				   JOptionPane.showMessageDialog(null, e1.getMensagemDeErro());	
+				}
+				popularTebela();
+			}
+		});
+		btnExcluir.setEnabled(false);
 		
 		JButton btnNewButton_1 = new JButton("Cadastrar Novo Cliente");
 		btnNewButton_1.addActionListener(new ActionListener() {
@@ -77,11 +90,14 @@ public class ListarClientes {
 			}
 		});
 		
-		JButton btnNewButton = new JButton("Alterar Cliente");
+		JButton btnAlterar = new JButton("Alterar Cliente");
+		btnAlterar.setEnabled(false);
 		
 		JButton btnGrupoDeClientes = new JButton("Grupo de Usuários");
+		btnGrupoDeClientes.setEnabled(false);
 		
 		JButton btnCadastrarSenhaApp = new JButton("Cadastrar Senha Usuário App");
+		btnCadastrarSenhaApp.setEnabled(false);
 		btnCadastrarSenhaApp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CadastrarSenhaUsuarioApp cadastrarSenha = new CadastrarSenhaUsuarioApp();
@@ -96,7 +112,7 @@ public class ListarClientes {
 					.addContainerGap()
 					.addGroup(gl_painelLateral.createParallelGroup(Alignment.LEADING)
 						.addComponent(btnNewButton_1, GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-						.addComponent(btnNewButton, GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
+						.addComponent(btnAlterar, GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
 						.addComponent(btnExcluir, GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
 						.addComponent(btnCadastrarSenhaApp, GroupLayout.PREFERRED_SIZE, 204, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnGrupoDeClientes, GroupLayout.PREFERRED_SIZE, 204, GroupLayout.PREFERRED_SIZE))
@@ -108,7 +124,7 @@ public class ListarClientes {
 					.addContainerGap()
 					.addComponent(btnNewButton_1)
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(btnNewButton)
+					.addComponent(btnAlterar)
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addComponent(btnExcluir)
 					.addPreferredGap(ComponentPlacement.RELATED)
@@ -132,6 +148,12 @@ public class ListarClientes {
 		frame.getContentPane().add(painelListagens, BorderLayout.CENTER);
 		
 		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+			}
+		});
 		GroupLayout gl_painelListagens = new GroupLayout(painelListagens);
 		gl_painelListagens.setHorizontalGroup(
 			gl_painelListagens.createParallelGroup(Alignment.TRAILING)
@@ -154,7 +176,11 @@ public class ListarClientes {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				UsuarioEntity usuarioEntity = usuarios.get(table.getSelectedRow());
-				JOptionPane.showMessageDialog(null, "Nome Clicado é " + usuarioEntity.getNome());
+				btnAlterar.setEnabled(true);
+				btnExcluir.setEnabled(true);
+				btnCadastrarSenhaApp.setEnabled(true);
+				
+				//JOptionPane.showMessageDialog(null, "Nome Clicado é " + usuarioEntity.getNome());
 			}
 		});
 		table.setColumnSelectionAllowed(true);
