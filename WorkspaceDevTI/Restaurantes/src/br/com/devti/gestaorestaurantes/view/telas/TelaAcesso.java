@@ -23,9 +23,10 @@ import javax.swing.border.EmptyBorder;
 import br.com.devti.gestaorestaurantes.core.entity.AcessoEntity;
 import br.com.devti.gestaorestaurantes.core.service.AcessoService;
 import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
+import br.com.devti.gestaorestaurantes.view.telas.Clientes.CadastrarSenhaUsuarioApp;
 
 public class TelaAcesso extends JFrame {
-	TelaCadastroUsuario frameUsuarios = new TelaCadastroUsuario();
+	CadastrarSenhaUsuarioApp frameUsuarios = new CadastrarSenhaUsuarioApp();
 	
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -77,6 +78,7 @@ public class TelaAcesso extends JFrame {
 						EventQueue.invokeLater(new Runnable() {
 							public void run() {
 								try {
+									
 									frameUsuarios.setVisible(true);
 								} catch (Exception e) {
 									e.printStackTrace();

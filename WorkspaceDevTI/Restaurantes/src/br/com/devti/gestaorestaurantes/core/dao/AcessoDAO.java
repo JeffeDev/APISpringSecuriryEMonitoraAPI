@@ -11,7 +11,8 @@ import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 public class AcessoDAO {
 
 	public boolean verificarAcessoUsuario(AcessoEntity acessoUsuario) throws NegocioException {
- 		String sql = "SELECT LOGIN, SENHA FROM usuario WHERE LOGIN = ? AND SENHA = ?";
+ 		String sql = "SELECT LOGIN, SENHA "
+ 				+ "FROM tbl_usuarios WHERE LOGIN = ? AND SENHA = ?";
  		boolean autenticado = false;
  		
  		PreparedStatement ps = null;

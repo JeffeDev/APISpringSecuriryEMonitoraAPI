@@ -1,4 +1,4 @@
-package br.com.devti.gestaorestaurantes.view.telas;
+package br.com.devti.gestaorestaurantes.view.telas.Clientes;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -24,7 +24,7 @@ import br.com.devti.gestaorestaurantes.core.entity.UsuarioEntity;
 import br.com.devti.gestaorestaurantes.core.service.UsuarioService;
 import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 
-public class TelaCadastroUsuario extends JFrame {
+public class CadastrarSenhaUsuarioApp extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -35,7 +35,7 @@ public class TelaCadastroUsuario extends JFrame {
 	private JPasswordField fieldSenha;
 	private JLabel labelNomeValidacao;
 
-	public TelaCadastroUsuario() {
+	public CadastrarSenhaUsuarioApp() {
 		setTitle("Cadastro de Usuário");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 533, 294);
@@ -44,7 +44,7 @@ public class TelaCadastroUsuario extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JLabel lblNewLabel = new JLabel("Cadastro de Usuário");
+		JLabel lblNewLabel = new JLabel("Cadastro de Senha do Usuário");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		
 		JLabel lblNewLabel_1 = new JLabel("Código");
@@ -59,6 +59,8 @@ public class TelaCadastroUsuario extends JFrame {
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
 		fieldNome = new JTextField();
+		fieldNome.setEditable(false);
+		fieldNome.setEnabled(false);
 		fieldNome.setColumns(10);
 		
 		JLabel lblNewLabel_3 = new JLabel("Login");
@@ -70,15 +72,12 @@ public class TelaCadastroUsuario extends JFrame {
 		JLabel lblNewLabel_4 = new JLabel("Senha");
 		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
-		JLabel lblNewLabel_5 = new JLabel("Email");
-		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		
 		fieldEmail = new JTextField();
 		fieldEmail.setColumns(10);
 		
 		JButton btnNewButton = new JButton("Salvar");
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		btnNewButton.setIcon(new ImageIcon(TelaCadastroUsuario.class.getResource("/resource/caixa-de-selecao.png")));
+		btnNewButton.setIcon(new ImageIcon(CadastrarSenhaUsuarioApp.class.getResource("/resource/caixa-de-selecao.png")));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -110,23 +109,8 @@ public class TelaCadastroUsuario extends JFrame {
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		
-		JButton btnCadastrarEndereos = new JButton("Mais dados Cliente");
-		btnCadastrarEndereos.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				EventQueue.invokeLater(new Runnable() {
-					public void run() {
-						try {
-							TelaCadastroDeMaisDadosDoCliente frameCadastroEnderecos = new TelaCadastroDeMaisDadosDoCliente();
-							frameCadastroEnderecos.setVisible(true);
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
-					}
-				});
-			}
-		});
-		btnCadastrarEndereos.setIcon(new ImageIcon(TelaCadastroUsuario.class.getResource("/resource/mais.png")));
-		btnCadastrarEndereos.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		JLabel lblNewLabel_4_1 = new JLabel("Confirmar:");
+		lblNewLabel_4_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -142,26 +126,23 @@ public class TelaCadastroUsuario extends JFrame {
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 										.addComponent(lblNewLabel_2)
 										.addComponent(lblNewLabel_3)
-										.addComponent(lblNewLabel_4))
-									.addGap(47)
-									.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-										.addComponent(fieldNome, GroupLayout.PREFERRED_SIZE, 404, GroupLayout.PREFERRED_SIZE)
-										.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-											.addComponent(fieldEmail, 404, 404, 404)
-											.addComponent(fieldSenha, 404, 404, 404)
-											.addComponent(fieldLogin, GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
-											.addGroup(gl_contentPane.createSequentialGroup()
-												.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)
-												.addGap(15)
-												.addComponent(btnCadastrarEndereos, GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE))))
-									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(labelNomeValidacao))
+										.addComponent(lblNewLabel_4)
+										.addComponent(lblNewLabel_4_1, GroupLayout.PREFERRED_SIZE, 75, GroupLayout.PREFERRED_SIZE))
+									.addGap(10)
+									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+										.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+											.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+												.addComponent(fieldNome, GroupLayout.PREFERRED_SIZE, 404, GroupLayout.PREFERRED_SIZE)
+												.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+													.addComponent(fieldSenha, 404, 404, Short.MAX_VALUE)
+													.addComponent(fieldLogin, GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
+													.addComponent(fieldEmail, GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)))
+											.addPreferredGap(ComponentPlacement.RELATED)
+											.addComponent(labelNomeValidacao))
+										.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)))
 								.addComponent(lblNewLabel_1)
 								.addComponent(fieldCodigo, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
-								.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addGroup(gl_contentPane.createSequentialGroup()
-									.addPreferredGap(ComponentPlacement.RELATED, 462, Short.MAX_VALUE)
-									.addComponent(lblNewLabel_5)))
+								.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 							.addGap(35))))
 		);
 		gl_contentPane.setVerticalGroup(
@@ -188,12 +169,10 @@ public class TelaCadastroUsuario extends JFrame {
 						.addComponent(fieldSenha, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblNewLabel_5)
-						.addComponent(fieldEmail, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+						.addComponent(fieldEmail, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(lblNewLabel_4_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 34, GroupLayout.PREFERRED_SIZE)
-						.addComponent(btnCadastrarEndereos, GroupLayout.PREFERRED_SIZE, 34, GroupLayout.PREFERRED_SIZE))
+					.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 34, GroupLayout.PREFERRED_SIZE)
 					.addGap(39)
 					.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 					.addGap(173))

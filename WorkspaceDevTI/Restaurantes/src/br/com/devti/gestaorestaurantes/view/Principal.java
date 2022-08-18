@@ -3,8 +3,11 @@ package br.com.devti.gestaorestaurantes.view;
 import java.awt.EventQueue;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import br.com.devti.gestaorestaurantes.core.entity.UsuarioEntity;
 import br.com.devti.gestaorestaurantes.core.service.UsuarioService;
+import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 import br.com.devti.gestaorestaurantes.view.telas.TelaAcesso;
 
 public class Principal {
@@ -20,11 +23,11 @@ public class Principal {
 //		UsuarioService usuarioService = new UsuarioService();
 //		
 //		try {
-//			System.out.println(usuarioService.salvarUsuario(usuario));
+//			System.out.println(usuarioService.salvar(usuario));
 //		}catch(NegocioException e) {
 //			JOptionPane.showMessageDialog(null, e.getMensagemDeErro());
 //		}
-		
+//		
 		
 		
 //		GrupoUsuarioEntity grupoUsuario = new GrupoUsuarioEntity();

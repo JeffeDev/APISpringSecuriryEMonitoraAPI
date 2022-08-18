@@ -14,7 +14,7 @@ public class UsuarioDAO {
 
 	public String salvar(UsuarioEntity usuario) throws NegocioException{
 						
- 		String sql = "INSERT INTO usuario (NOME, LOGIN, SENHA, EMAIL) VALUES (?,?,?,?)";
+ 		String sql = "INSERT INTO tbl_usuarios (NOME, LOGIN, SENHA, EMAIL) VALUES (?,?,?,?)";
  		
  		PreparedStatement ps = null;
  		
@@ -26,7 +26,6 @@ public class UsuarioDAO {
 			ps.setString(4, usuario.getEmail());
 			
 			ps.execute();
-			
 			
 		} catch (SQLException e) {	
 			throw new NegocioException("Erro ao cadastrar usuario : " + e.getMessage());
@@ -46,7 +45,8 @@ public class UsuarioDAO {
 	}
 
 	public static List<UsuarioEntity> listar() throws NegocioException {
-		String sql = "SELECT us.id, us.nome, us.login, us.email, us.celular, us.cpf, us.dt_Nascimento, us.cidade_Nascimento FROM usuario us ";
+		String sql = "SELECT us.id, us.nome, us.login, us.email, us.celular "
+				+ "FROM tbl_usuarios us ";
 		PreparedStatement ps = null;
 		ResultSet rs;
 		List<UsuarioEntity> listagem = new ArrayList<>();

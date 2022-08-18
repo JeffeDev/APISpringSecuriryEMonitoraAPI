@@ -1,4 +1,4 @@
-package br.com.devti.gestaorestaurantes.view.telas;
+package br.com.devti.gestaorestaurantes.view.telas.Clientes;
 
 import java.awt.Font;
 
@@ -17,7 +17,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 
-public class TelaCadastroDeMaisDadosDoCliente extends JFrame {
+public class MaisDadosUsuario extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -41,7 +41,7 @@ public class TelaCadastroDeMaisDadosDoCliente extends JFrame {
 //		EventQueue.invokeLater(new Runnable() {
 //			public void run() {
 //				try {
-//					TelaCadastroDeMaisDadosDoCliente frame = new TelaCadastroDeMaisDadosDoCliente();
+//					MaisDadosUsuario frame = new MaisDadosUsuario();
 //					frame.setVisible(true);
 //				} catch (Exception e) {
 //					e.printStackTrace();
@@ -53,7 +53,7 @@ public class TelaCadastroDeMaisDadosDoCliente extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public TelaCadastroDeMaisDadosDoCliente() {
+	public MaisDadosUsuario() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 652, 481);
 		contentPane = new JPanel();
@@ -83,11 +83,11 @@ public class TelaCadastroDeMaisDadosDoCliente extends JFrame {
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		
 		JButton btnNewButton = new JButton("Salvar");
-		btnNewButton.setIcon(new ImageIcon(TelaCadastroDeMaisDadosDoCliente.class.getResource("/resource/caixa-de-selecao.png")));
+		btnNewButton.setIcon(new ImageIcon(MaisDadosUsuario.class.getResource("/resource/caixa-de-selecao.png")));
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
 		JButton btnFechar = new JButton("Fechar");
-		btnFechar.setIcon(new ImageIcon(TelaCadastroDeMaisDadosDoCliente.class.getResource("/resource/cruz.png")));
+		btnFechar.setIcon(new ImageIcon(MaisDadosUsuario.class.getResource("/resource/cruz.png")));
 		btnFechar.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
