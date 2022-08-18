@@ -69,6 +69,31 @@ public class UsuarioDAO {
         }
 		return listagem;
 	}
+
+	public void excluir(Long id) throws NegocioException {
+		String sql = "DELETE FROM tbl_usuarios "
+				+ "    WHERE tbl_usuarios.id = ?";
+		
+		PreparedStatement ps = null;
+		
+		try {
+			ps = ConexaoMySQL.getConexao().prepareStatement(sql);
+			ps.setLong(1, id);
+			
+			ps.execute();
+			
+		} catch (SQLException e) {
+			throw new NegocioException("Não foi possível excluir: ERRO -> " +  e.getMessage());
+		} finally {
+			try {
+				ps.close();
+			} catch (Exception erroAoFechar) {
+				erroAoFechar.printStackTrace();
+			}
+		}
+		
+		
+	}
 	
 }
 

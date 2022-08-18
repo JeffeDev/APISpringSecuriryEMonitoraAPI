@@ -25,5 +25,9 @@ public class UsuarioBO {
 	public static List<UsuarioEntity> listar() throws NegocioException {
 		return UsuarioDAO.listar();
 	}
+
+	public void excluir(Long id) throws NegocioException {
+		new UsuarioDAO().excluir(id);
+	}
 	
 }

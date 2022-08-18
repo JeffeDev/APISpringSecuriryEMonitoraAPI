@@ -18,4 +18,7 @@ public class UsuarioService {
 		return UsuarioBO.listar();
 	}
 	
+	public void excluir(Long Id) throws NegocioException {
+		new UsuarioBO().excluir(Id);
+	}
 }

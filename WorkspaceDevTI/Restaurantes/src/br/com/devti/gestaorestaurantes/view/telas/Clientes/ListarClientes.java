@@ -71,6 +71,11 @@ public class ListarClientes {
 		JButton btnExcluir = new JButton("Excluir Cliente");
 		
 		JButton btnNewButton_1 = new JButton("Cadastrar Novo Cliente");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		
 		JButton btnNewButton = new JButton("Alterar Cliente");
 		
