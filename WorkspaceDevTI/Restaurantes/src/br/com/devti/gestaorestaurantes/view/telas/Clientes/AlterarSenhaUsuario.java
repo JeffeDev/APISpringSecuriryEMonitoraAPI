@@ -1,7 +1,6 @@
 package br.com.devti.gestaorestaurantes.view.telas.Clientes;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,8 +22,9 @@ import javax.swing.border.EmptyBorder;
 import br.com.devti.gestaorestaurantes.core.entity.UsuarioEntity;
 import br.com.devti.gestaorestaurantes.core.service.UsuarioService;
 import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
+import java.awt.Toolkit;
 
-public class CadastrarSenhaUsuarioApp extends JFrame {
+public class AlterarSenhaUsuario extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -35,9 +35,11 @@ public class CadastrarSenhaUsuarioApp extends JFrame {
 	private JPasswordField fieldSenha;
 	private JLabel labelNomeValidacao;
 
-	public CadastrarSenhaUsuarioApp() {
+	public AlterarSenhaUsuario() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(AlterarSenhaUsuario.class.getResource("/resource/lapis.png")));
 		setTitle("Cadastro de Usuário");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		
 		setBounds(100, 100, 533, 294);
 		contentPane = new JPanel();
 		contentPane.setToolTipText("");
@@ -77,7 +79,7 @@ public class CadastrarSenhaUsuarioApp extends JFrame {
 		
 		JButton btnNewButton = new JButton("Salvar");
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		btnNewButton.setIcon(new ImageIcon(CadastrarSenhaUsuarioApp.class.getResource("/resource/caixa-de-selecao.png")));
+		btnNewButton.setIcon(new ImageIcon(AlterarSenhaUsuario.class.getResource("/resource/caixa-de-selecao.png")));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -129,19 +131,17 @@ public class CadastrarSenhaUsuarioApp extends JFrame {
 										.addComponent(lblNewLabel_4)
 										.addComponent(lblNewLabel_4_1, GroupLayout.PREFERRED_SIZE, 75, GroupLayout.PREFERRED_SIZE))
 									.addGap(10)
-									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-										.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
-											.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-												.addComponent(fieldNome, GroupLayout.PREFERRED_SIZE, 404, GroupLayout.PREFERRED_SIZE)
-												.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-													.addComponent(fieldSenha, 404, 404, Short.MAX_VALUE)
-													.addComponent(fieldLogin, GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
-													.addComponent(fieldEmail, GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)))
-											.addPreferredGap(ComponentPlacement.RELATED)
-											.addComponent(labelNomeValidacao))
-										.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)))
-								.addComponent(lblNewLabel_1)
-								.addComponent(fieldCodigo, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
+									.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+										.addComponent(fieldNome, GroupLayout.PREFERRED_SIZE, 404, GroupLayout.PREFERRED_SIZE)
+										.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+											.addComponent(fieldSenha, 404, 404, Short.MAX_VALUE)
+											.addComponent(fieldLogin, GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
+											.addComponent(fieldEmail, GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
+											.addComponent(btnNewButton, Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE))
+										.addComponent(fieldCodigo, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
+										.addComponent(lblNewLabel_1))
+									.addPreferredGap(ComponentPlacement.RELATED)
+									.addComponent(labelNomeValidacao))
 								.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 							.addGap(35))))
 		);
@@ -154,7 +154,7 @@ public class CadastrarSenhaUsuarioApp extends JFrame {
 					.addComponent(lblNewLabel_1)
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addComponent(fieldCodigo, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addGap(11)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblNewLabel_2)
 						.addComponent(fieldNome, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
@@ -187,4 +187,5 @@ public class CadastrarSenhaUsuarioApp extends JFrame {
 		fieldSenha.setText("");
 		fieldEmail.setText("");
 	}
+
 }

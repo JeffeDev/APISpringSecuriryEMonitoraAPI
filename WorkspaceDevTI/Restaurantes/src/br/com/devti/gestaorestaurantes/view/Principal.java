@@ -1,18 +1,12 @@
 package br.com.devti.gestaorestaurantes.view;
 
 import java.awt.EventQueue;
-import java.util.List;
 
-import javax.swing.JOptionPane;
-
-import br.com.devti.gestaorestaurantes.core.entity.UsuarioEntity;
-import br.com.devti.gestaorestaurantes.core.service.UsuarioService;
-import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 import br.com.devti.gestaorestaurantes.view.telas.TelaAcesso;
 
 public class Principal {
-
 	public static void main(String[] args) {
+		
 //		UsuarioEntity usuario = new UsuarioEntity();
 //		
 //		usuario.setNome("Jeffe");
@@ -27,7 +21,7 @@ public class Principal {
 //		}catch(NegocioException e) {
 //			JOptionPane.showMessageDialog(null, e.getMensagemDeErro());
 //		}
-//		
+		
 		
 		
 //		GrupoUsuarioEntity grupoUsuario = new GrupoUsuarioEntity();
@@ -40,27 +34,29 @@ public class Principal {
 //			JOptionPane.showMessageDialog(null, e.getMensagemDeErro());
 //		}	
 		
-		try {
-		    List<UsuarioEntity> usuarios = new UsuarioService().listar();
-		    
-		    for (UsuarioEntity usuarioEntity : usuarios) {
-				System.out.println(usuarioEntity);
-			}
-		    
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		try {
+//		    List<UsuarioEntity> usuarios = new UsuarioService().listar();
+//		    
+//		    for (UsuarioEntity usuarioEntity : usuarios) {
+//				System.out.println(usuarioEntity);
+//			}
+//		    
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					TelaAcesso frame = new TelaAcesso();
-					frame.setVisible(true);
+					
+					TelaAcesso frameTelaAcesso = new TelaAcesso();
+					frameTelaAcesso.setVisible(true);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
-		});		
+		});	
 		
 	}
 

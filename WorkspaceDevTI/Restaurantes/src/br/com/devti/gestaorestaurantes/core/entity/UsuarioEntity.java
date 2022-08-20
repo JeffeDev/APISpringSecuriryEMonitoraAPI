@@ -13,7 +13,6 @@ public class UsuarioEntity implements Serializable {
 	private String senha;
 	private String email;
 
-	private Long  idGrupoUsuario;
 	private String cpf;
 	private String dataNascimento;
 	private String celular;
@@ -25,6 +24,8 @@ public class UsuarioEntity implements Serializable {
 	private String complemento;
 	private String cidade;
 	private String estado;	
+	private String obs;
+	private String gps;
 	
 	public Long getId() {
 		return id;
@@ -136,11 +137,10 @@ public class UsuarioEntity implements Serializable {
 		this.senha = senha;
 		this.email = email;
 	}
-	public UsuarioEntity(Long idGrupoUsuario, String cpf,
+	public UsuarioEntity(String cpf,
 			String dataNascimento, String celular, String telefone, String cep, String endereco, String numero,
 			String bairro, String complemento, String cidade, String estado) {
 		super();
-		this.idGrupoUsuario = idGrupoUsuario;
 		this.cpf = cpf;
 		this.dataNascimento = dataNascimento;
 		this.celular = celular;
@@ -162,7 +162,6 @@ public class UsuarioEntity implements Serializable {
 		this.login = login;
 		this.senha = senha;
 		this.email = email;
-		this.idGrupoUsuario = idGrupoUsuario;
 		this.cpf = cpf;
 		this.dataNascimento = dataNascimento;
 		this.celular = celular;
@@ -175,27 +174,7 @@ public class UsuarioEntity implements Serializable {
 		this.cidade = cidade;
 		this.estado = estado;
 	}
-	public UsuarioEntity(Long id, String nome, String login, String senha, String email,
-			String estado) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.login = login;
-		this.senha = senha;
-		this.email = email;
-		this.idGrupoUsuario = idGrupoUsuario;
-		this.cpf = cpf;
-		this.dataNascimento = dataNascimento;
-		this.celular = celular;
-		this.telefone = telefone;
-		this.cep = cep;
-		this.endereco = endereco;
-		this.numero = numero;
-		this.bairro = bairro;
-		this.complemento = complemento;
-		this.cidade = cidade;
-		this.estado = estado;
-	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -210,6 +189,22 @@ public class UsuarioEntity implements Serializable {
 			return false;
 		UsuarioEntity other = (UsuarioEntity) obj;
 		return Objects.equals(id, other.id);
+	}
+
+	public String getObs() {
+		return obs;
+	}
+
+	public void setObs(String obs) {
+		this.obs = obs;
+	}
+
+	public String getGps() {
+		return gps;
+	}
+
+	public void setGps(String gps) {
+		this.gps = gps;
 	}
 
 }

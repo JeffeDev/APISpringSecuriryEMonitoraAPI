@@ -1,6 +1,6 @@
 package br.com.devti.gestaorestaurantes.view.telas;
 
-import java.awt.EventQueue;
+import java.awt.Dialog.ModalExclusionType;
 import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -23,29 +23,30 @@ import javax.swing.border.EmptyBorder;
 import br.com.devti.gestaorestaurantes.core.entity.AcessoEntity;
 import br.com.devti.gestaorestaurantes.core.service.AcessoService;
 import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
-import br.com.devti.gestaorestaurantes.view.telas.Clientes.CadastrarSenhaUsuarioApp;
 
 public class TelaAcesso extends JFrame {
-	CadastrarSenhaUsuarioApp frameUsuarios = new CadastrarSenhaUsuarioApp();
-	
 	private static final long serialVersionUID = 1L;
+	
 	private JPanel contentPane;
 	private JTextField fieldLogin;
 	private JTextField fieldSenha;
 
 	public TelaAcesso() {
+		setResizable(false);
 		addWindowStateListener(new WindowStateListener() {
 			public void windowStateChanged(WindowEvent e) {
 
 			}
 		});
-		setType(Type.POPUP);
+		setType(Type.UTILITY);
 		setTitle("Controle de Restaurantes");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(TelaAcesso.class.getResource("/resource/restaurante.png")));
-		setAlwaysOnTop(true);
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 334, 300);
+		
+		setBounds(500, 100, 334, 300);
 		contentPane = new JPanel();
+		
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 
@@ -59,6 +60,7 @@ public class TelaAcesso extends JFrame {
 		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		JButton btnAcessarButton = new JButton("Acessar");
+		
 		btnAcessarButton.setIcon(new ImageIcon(TelaAcesso.class.getResource("/resource/verificar.png")));
 		btnAcessarButton.addActionListener(new ActionListener() {
 
@@ -66,25 +68,21 @@ public class TelaAcesso extends JFrame {
 				AcessoEntity acesso = new AcessoEntity();
 				acesso.setLogin(fieldLogin.getText());
 				acesso.setSenha(fieldSenha.getText());
-
+				
+				setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+				
 				try {
+					
 					boolean permissao = new AcessoService().verificarAcessoUsuario(acesso);
 
 					limparCampos();
-					frameUsuarios.setVisible(permissao);
 					
 					if (permissao) {
-						// JOptionPane.showMessageDialog(null, "Acesso Permitido");
-						EventQueue.invokeLater(new Runnable() {
-							public void run() {
-								try {
-									
-									frameUsuarios.setVisible(true);
-								} catch (Exception e) {
-									e.printStackTrace();
-								}
-							}
-						});
+						
+						setVisible(false);
+						MenuPrincipal mainMenu = new MenuPrincipal();
+						mainMenu.setVisible(permissao);
+						
 					} else {
 						JOptionPane.showMessageDialog(null, "Acesso negado");
 					}
@@ -106,6 +104,7 @@ public class TelaAcesso extends JFrame {
 
 		fieldSenha = new JTextField();
 		fieldSenha.setColumns(10);
+		
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
 				.addGroup(Alignment.LEADING,
