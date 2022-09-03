@@ -1,4 +1,4 @@
-package br.com.devti.gestaorestaurantes.view.telas.Clientes;
+package br.com.devti.gestaorestaurantes.view.telas.Fornecedores;
 
 import java.awt.Font;
 import java.awt.Toolkit;
@@ -15,7 +15,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -26,23 +25,23 @@ import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 import javax.swing.table.DefaultTableModel;
 
-import br.com.devti.gestaorestaurantes.core.entity.UsuarioEntity;
-import br.com.devti.gestaorestaurantes.core.service.UsuarioService;
+import br.com.devti.gestaorestaurantes.core.entity.FornecedoresEntity;
+import br.com.devti.gestaorestaurantes.core.service.FornecedoresService;
 import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 
-public class TelaPrincipalClientes extends JFrame {
+public class TelaPrincipalFornecedores extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	private List<UsuarioEntity> usuarios;
-
+	private List<FornecedoresEntity> fornec;
 
 	private JTable table;
 	private JButton btnSalvar;
 	private JButton btnFechar;
 	private JButton btnNovo;
 	private JPanel panel;
-	private JTextField fieldNome;
+	
+	private JTextField fieldRazao;
 	private JTextField fieldEmail;
 	private JTextField fieldCep;
 	private JTextField fieldRua;
@@ -54,12 +53,12 @@ public class TelaPrincipalClientes extends JFrame {
 	private JTextField fieldEstado;
 	private JTextField fieldTelefone;
 	private JTextField fieldGps;
-	private JLabel lblNewLabel_2_1_6;
-	private JTextField fieldLogin;
+
 	private JLabel lblNewLabel;
 	private JTextField fieldId;
 	private JButton btnExcluilo;
-	private JPasswordField fieldPassword;
+	private JLabel lblNewLabel_2_1_4_2;
+	private JTextField fieldCnpj;
 
 	/**
 	 * Launch the application.
@@ -80,11 +79,11 @@ public class TelaPrincipalClientes extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public TelaPrincipalClientes() {
+	public TelaPrincipalFornecedores() {
 		setType(Type.UTILITY);
-		setTitle("Clientes");
+		setTitle("Fornecedores");
 		setIconImage(Toolkit.getDefaultToolkit()
-				.getImage(TelaPrincipalClientes.class.getResource("/resource/adicionar-usuario.png")));
+				.getImage(TelaPrincipalFornecedores.class.getResource("/resource/adicionar-usuario.png")));
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(300, 20, 841, 674);
 		contentPane = new JPanel();
@@ -108,19 +107,23 @@ public class TelaPrincipalClientes extends JFrame {
 		btnSalvar = new JButton("Salvar");
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				UsuarioService usuario = new UsuarioService();
-
-				try {
-					if (fieldId.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, usuario.salvarDadosCliente(carregarDadosParaGravacao()));
-					} else {
-						JOptionPane.showMessageDialog(null, usuario.alterarDadosCliente(carregarDadosParaGravacao()));
+				FornecedoresService fornec = new FornecedoresService();
+				if (fieldId.getText().equals(null) || fieldId.getText().equals("")){
+					try {
+						JOptionPane.showMessageDialog(null, fornec.salvarDadosFornecedores(carregarDadosParaGravacao()));
+					} catch (Exception erro) {
+						JOptionPane.showMessageDialog(null, "ERRO ao Incluir os dados: " + erro.getMessage());
 					}
-				} catch (Exception erro) {
-					JOptionPane.showMessageDialog(null, "ERRO ao Pegar os dados da tela: " + erro.getMessage());
+				} else {
+					try {
+						JOptionPane.showMessageDialog(null, fornec.alterarDadosFornecedores(carregarDadosParaGravacao()));
+					} catch (Exception erro) {
+						JOptionPane.showMessageDialog(null, "ERRO ao Alterar os dados: " + erro.getMessage());
+					}
 				}
-
+				
 				limparCampos();
+				
 				try {
 					popularTebela();
 				} catch (NegocioException e1) {
@@ -145,7 +148,7 @@ public class TelaPrincipalClientes extends JFrame {
 				limparCampos();
 				habilitarDesabilitarCampos(true);
 				habilitaDesabilitaBotoes();
-				fieldNome.requestFocus();
+				fieldRazao.requestFocus();
 			}
 		});
 		btnNovo.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -157,15 +160,15 @@ public class TelaPrincipalClientes extends JFrame {
 		btnExcluilo.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				UsuarioEntity usuario = usuarios.get(table.getSelectedRow());
+				FornecedoresEntity usuario = fornec.get(table.getSelectedRow());
 				carregarDadosNaTela(usuario);
 				habilitarDesabilitarCampos(false);
 
-				if (JOptionPane.showConfirmDialog(null, "Deseja excluir o usuário " + usuario.getNome()) == 0) {
+				if (JOptionPane.showConfirmDialog(null, "Deseja excluir o usuário " + usuario.getRazao()) == 0) {
 					// 0=yes, 1=no, 2=cancel
-					UsuarioService usuarioexcluir = new UsuarioService();
+					FornecedoresService fornec = new FornecedoresService();
 					try {
-						JOptionPane.showMessageDialog(null, usuarioexcluir.excluir(usuario.getId()) );
+						JOptionPane.showMessageDialog(null, fornec.excluir(usuario.getId()) );
 						
 						limparCampos();
 						popularTebela();
@@ -213,11 +216,11 @@ public class TelaPrincipalClientes extends JFrame {
 					.addContainerGap())
 		);
 
-		JLabel lblNewLabel_2 = new JLabel("Nome");
+		JLabel lblNewLabel_2 = new JLabel("Razao Social");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
-		fieldNome = new JTextField();
-		fieldNome.setColumns(10);
+		fieldRazao = new JTextField();
+		fieldRazao.setColumns(10);
 
 		JLabel lblNewLabel_2_2 = new JLabel("Email");
 		lblNewLabel_2_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -285,13 +288,6 @@ public class TelaPrincipalClientes extends JFrame {
 		fieldGps = new JTextField();
 		fieldGps.setColumns(10);
 
-		lblNewLabel_2_1_6 = new JLabel("Login");
-		lblNewLabel_2_1_6.setFont(new Font("Tahoma", Font.PLAIN, 14));
-
-		fieldLogin = new JTextField();
-		fieldLogin.setEnabled(false);
-		fieldLogin.setColumns(10);
-
 		lblNewLabel = new JLabel("Código");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
@@ -300,10 +296,12 @@ public class TelaPrincipalClientes extends JFrame {
 		fieldId.setEditable(false);
 		fieldId.setColumns(10);
 		
-		JLabel lblNewLabel_2_1_6_1 = new JLabel("Nova Senha");
-		lblNewLabel_2_1_6_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_2_1_4_2 = new JLabel("CNPJ");
+		lblNewLabel_2_1_4_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
-		fieldPassword = new JPasswordField();
+		fieldCnpj = new JTextField();
+		fieldCnpj.setEnabled(false);
+		fieldCnpj.setColumns(10);
 
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
@@ -319,87 +317,85 @@ public class TelaPrincipalClientes extends JFrame {
 						.addGroup(gl_panel.createSequentialGroup()
 							.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 								.addComponent(lblNewLabel_2_1_8_1, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
-								.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+								.addGroup(gl_panel.createSequentialGroup()
+									.addComponent(fieldCep, GroupLayout.PREFERRED_SIZE, 106, GroupLayout.PREFERRED_SIZE)
+									.addGap(8)
+									.addComponent(fieldRua, GroupLayout.PREFERRED_SIZE, 418, GroupLayout.PREFERRED_SIZE)
+									.addGap(6)
+									.addComponent(fieldNumero, GroupLayout.PREFERRED_SIZE, 50, GroupLayout.PREFERRED_SIZE))
+								.addGroup(gl_panel.createSequentialGroup()
+									.addComponent(lblNewLabel_2_1_3, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
+									.addGap(124)
+									.addComponent(lblNewLabel_2_1_4, GroupLayout.PREFERRED_SIZE, 41, GroupLayout.PREFERRED_SIZE)
+									.addGap(148)
+									.addComponent(lblNewLabel_2_1_5_1, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
+									.addGap(5)
+									.addComponent(lblNewLabel_2_1_4_1, GroupLayout.PREFERRED_SIZE, 122, GroupLayout.PREFERRED_SIZE))
+								.addComponent(fieldObs, 590, 590, 590)
+								.addGroup(gl_panel.createSequentialGroup()
+									.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+										.addGroup(gl_panel.createSequentialGroup()
+											.addGroup(gl_panel.createParallelGroup(Alignment.LEADING, false)
+												.addComponent(fieldComplemento)
+												.addComponent(lblNewLabel_2_1_5, GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE))
+											.addPreferredGap(ComponentPlacement.RELATED)
+											.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+												.addGroup(gl_panel.createSequentialGroup()
+													.addComponent(lblNewLabel_2_1_8, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE)
+													.addPreferredGap(ComponentPlacement.RELATED, 133, Short.MAX_VALUE))
+												.addComponent(fieldGps, GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)))
+										.addGroup(gl_panel.createSequentialGroup()
+											.addComponent(fieldBairro, GroupLayout.PREFERRED_SIZE, 153, GroupLayout.PREFERRED_SIZE)
+											.addGap(6)
+											.addComponent(fieldCidade, GroupLayout.PREFERRED_SIZE, 184, GroupLayout.PREFERRED_SIZE)))
+									.addGap(6)
+									.addGroup(gl_panel.createParallelGroup(Alignment.LEADING, false)
+										.addGroup(gl_panel.createSequentialGroup()
+											.addComponent(fieldEstado, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
+											.addGap(6)
+											.addComponent(fieldTelefone, GroupLayout.PREFERRED_SIZE, 190, GroupLayout.PREFERRED_SIZE))
+										.addComponent(lblNewLabel_2_2, GroupLayout.PREFERRED_SIZE, 31, GroupLayout.PREFERRED_SIZE)
+										.addComponent(fieldEmail))
+									.addGap(25))
+								.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
 									.addGroup(gl_panel.createSequentialGroup()
+										.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+											.addGroup(gl_panel.createSequentialGroup()
+												.addGap(2)
+												.addComponent(fieldRazao, GroupLayout.PREFERRED_SIZE, 314, GroupLayout.PREFERRED_SIZE))
+											.addComponent(lblNewLabel_2, GroupLayout.PREFERRED_SIZE, 133, GroupLayout.PREFERRED_SIZE))
+										.addPreferredGap(ComponentPlacement.RELATED)
+										.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+											.addComponent(lblNewLabel_2_1_4_2, GroupLayout.PREFERRED_SIZE, 122, GroupLayout.PREFERRED_SIZE)
+											.addComponent(fieldCnpj, GroupLayout.PREFERRED_SIZE, 266, GroupLayout.PREFERRED_SIZE))
+										.addGap(27))
+									.addGroup(Alignment.LEADING, gl_panel.createSequentialGroup()
 										.addComponent(lblNewLabel_2_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
 										.addGap(89)
 										.addComponent(lblNewLabel_2_1_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
 										.addGap(399)
-										.addComponent(lblNewLabel_2_1_2, GroupLayout.PREFERRED_SIZE, 50, GroupLayout.PREFERRED_SIZE))
-									.addGroup(gl_panel.createSequentialGroup()
-										.addComponent(fieldCep, GroupLayout.PREFERRED_SIZE, 106, GroupLayout.PREFERRED_SIZE)
-										.addGap(8)
-										.addComponent(fieldRua, GroupLayout.PREFERRED_SIZE, 418, GroupLayout.PREFERRED_SIZE)
-										.addGap(6)
-										.addComponent(fieldNumero, GroupLayout.PREFERRED_SIZE, 50, GroupLayout.PREFERRED_SIZE))
-									.addGroup(gl_panel.createSequentialGroup()
-										.addComponent(lblNewLabel_2_1_3, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
-										.addGap(124)
-										.addComponent(lblNewLabel_2_1_4, GroupLayout.PREFERRED_SIZE, 41, GroupLayout.PREFERRED_SIZE)
-										.addGap(148)
-										.addComponent(lblNewLabel_2_1_5_1, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
-										.addGap(5)
-										.addComponent(lblNewLabel_2_1_4_1, GroupLayout.PREFERRED_SIZE, 122, GroupLayout.PREFERRED_SIZE))
-									.addGroup(gl_panel.createSequentialGroup()
-										.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-											.addComponent(lblNewLabel_2, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
-											.addGroup(gl_panel.createSequentialGroup()
-												.addGap(2)
-												.addComponent(fieldNome, GroupLayout.PREFERRED_SIZE, 314, GroupLayout.PREFERRED_SIZE)))
-										.addPreferredGap(ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-										.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-											.addComponent(lblNewLabel_2_2, GroupLayout.PREFERRED_SIZE, 31, GroupLayout.PREFERRED_SIZE)
-											.addComponent(fieldEmail, GroupLayout.PREFERRED_SIZE, 266, GroupLayout.PREFERRED_SIZE)))
-									.addComponent(fieldObs, 590, 590, 590)
-									.addGroup(gl_panel.createSequentialGroup()
-										.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-											.addGroup(gl_panel.createSequentialGroup()
-												.addGroup(gl_panel.createParallelGroup(Alignment.LEADING, false)
-													.addComponent(fieldComplemento)
-													.addComponent(lblNewLabel_2_1_5, GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE))
-												.addPreferredGap(ComponentPlacement.RELATED)
-												.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-													.addGroup(gl_panel.createSequentialGroup()
-														.addComponent(lblNewLabel_2_1_8, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE)
-														.addPreferredGap(ComponentPlacement.RELATED, 133, Short.MAX_VALUE))
-													.addComponent(fieldGps, GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)))
-											.addGroup(gl_panel.createSequentialGroup()
-												.addComponent(fieldBairro, GroupLayout.PREFERRED_SIZE, 153, GroupLayout.PREFERRED_SIZE)
-												.addGap(6)
-												.addComponent(fieldCidade, GroupLayout.PREFERRED_SIZE, 184, GroupLayout.PREFERRED_SIZE)))
-										.addGap(6)
-										.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
-											.addGroup(gl_panel.createSequentialGroup()
-												.addComponent(fieldEstado, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
-												.addGap(6)
-												.addComponent(fieldTelefone, GroupLayout.PREFERRED_SIZE, 190, GroupLayout.PREFERRED_SIZE))
-											.addGroup(gl_panel.createSequentialGroup()
-												.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-													.addComponent(lblNewLabel_2_1_6, GroupLayout.PREFERRED_SIZE, 41, GroupLayout.PREFERRED_SIZE)
-													.addComponent(fieldLogin, GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE))
-												.addPreferredGap(ComponentPlacement.UNRELATED)
-												.addGroup(gl_panel.createParallelGroup(Alignment.LEADING, false)
-													.addComponent(fieldPassword)
-													.addComponent(lblNewLabel_2_1_6_1, GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)))))))
-							.addGap(25))))
+										.addComponent(lblNewLabel_2_1_2, GroupLayout.PREFERRED_SIZE, 50, GroupLayout.PREFERRED_SIZE))))
+							.addGap(0))))
 		);
 		gl_panel.setVerticalGroup(
 			gl_panel.createParallelGroup(Alignment.TRAILING)
 				.addGroup(gl_panel.createSequentialGroup()
-					.addContainerGap(12, Short.MAX_VALUE)
-					.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
-						.addComponent(fieldId, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGap(32)
 					.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
 						.addGroup(gl_panel.createSequentialGroup()
+							.addContainerGap(12, Short.MAX_VALUE)
+							.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
+								.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
+								.addComponent(fieldId, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addGap(32)
 							.addComponent(lblNewLabel_2, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
-							.addGap(6)
-							.addComponent(fieldNome, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addComponent(fieldRazao, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 						.addGroup(gl_panel.createSequentialGroup()
-							.addComponent(lblNewLabel_2_2, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
-							.addGap(6)
-							.addComponent(fieldEmail, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+							.addContainerGap()
+							.addComponent(lblNewLabel_2_1_4_2, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(fieldCnpj, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED)))
 					.addGap(6)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 						.addComponent(lblNewLabel_2_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
@@ -425,10 +421,6 @@ public class TelaPrincipalClientes extends JFrame {
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_panel.createSequentialGroup()
-							.addComponent(lblNewLabel_2_1_6_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(fieldPassword, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-						.addGroup(gl_panel.createSequentialGroup()
 							.addComponent(lblNewLabel_2_1_5, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(fieldComplemento, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
@@ -436,14 +428,13 @@ public class TelaPrincipalClientes extends JFrame {
 							.addComponent(lblNewLabel_2_1_8_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE))
 						.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
 							.addGroup(gl_panel.createSequentialGroup()
-								.addComponent(lblNewLabel_2_1_6, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
-								.addGap(26))
+								.addComponent(lblNewLabel_2_2, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
+								.addPreferredGap(ComponentPlacement.RELATED)
+								.addComponent(fieldEmail, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 							.addGroup(gl_panel.createSequentialGroup()
 								.addComponent(lblNewLabel_2_1_8, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
 								.addPreferredGap(ComponentPlacement.RELATED)
-								.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
-									.addComponent(fieldGps, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-									.addComponent(fieldLogin, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
+								.addComponent(fieldGps, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
 					.addComponent(fieldObs, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 					.addContainerGap())
 		);
@@ -453,46 +444,35 @@ public class TelaPrincipalClientes extends JFrame {
 		table.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				UsuarioEntity usuario = usuarios.get(table.getSelectedRow());
+				FornecedoresEntity usuario = fornec.get(table.getSelectedRow());
 				carregarDadosNaTela(usuario);
 				habilitarDesabilitarCampos(true);
 				habilitaDesabilitaBotoes();
-				fieldNome.requestFocus();
+				fieldRazao.requestFocus();
 			}
 		});
 		table.setFillsViewportHeight(true);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		table.setModel(new DefaultTableModel(
-				new Object[][] {
-						{ null, null, null, null, null, null, null, null, null, null, null, null, null, null }, },
-				new String[] { "Id", "Nome", "Email", "Cep", "Endere\u00E7o", "N\u00FAmero", "Bairro", "Cidade",
-						"Complemento", "Estado", "OBS", "GPS", "Login", "Telefone" }) {
-			private static final long serialVersionUID = 1L;
-			boolean[] columnEditables = new boolean[] { false, false, false, false, false, false, false, false, false,
-					false, false, false, false, false };
-
-			public boolean isCellEditable(int row, int column) {
-				return columnEditables[column];
+			new Object[][] {
+			},
+			new String[] {
+				"Id", "Razao", "CNPJ", "Email", "Cep", "Endere\u00E7o", "N\u00FAmero", "Bairro", "Cidade", "Complemento", "Estado", "OBS", "GPS", "Telefone"
 			}
-		});
-		table.getColumnModel().getColumn(0).setResizable(false);
-		table.getColumnModel().getColumn(1).setResizable(false);
+		));
+		table.getColumnModel().getColumn(0).setPreferredWidth(47);
 		table.getColumnModel().getColumn(1).setPreferredWidth(224);
 		table.getColumnModel().getColumn(2).setPreferredWidth(180);
-		table.getColumnModel().getColumn(4).setPreferredWidth(337);
-		table.getColumnModel().getColumn(5).setResizable(false);
-		table.getColumnModel().getColumn(5).setPreferredWidth(52);
+		table.getColumnModel().getColumn(3).setPreferredWidth(231);
+		table.getColumnModel().getColumn(4).setPreferredWidth(95);
+		table.getColumnModel().getColumn(5).setPreferredWidth(360);
 		table.getColumnModel().getColumn(6).setPreferredWidth(133);
 		table.getColumnModel().getColumn(7).setPreferredWidth(174);
 		table.getColumnModel().getColumn(8).setPreferredWidth(109);
-		table.getColumnModel().getColumn(9).setResizable(false);
-		table.getColumnModel().getColumn(9).setPreferredWidth(45);
+		table.getColumnModel().getColumn(9).setPreferredWidth(126);
 		table.getColumnModel().getColumn(10).setPreferredWidth(285);
-		table.getColumnModel().getColumn(11).setResizable(false);
 		table.getColumnModel().getColumn(11).setPreferredWidth(221);
-		table.getColumnModel().getColumn(12).setResizable(false);
 		table.getColumnModel().getColumn(12).setPreferredWidth(101);
-		table.getColumnModel().getColumn(13).setResizable(false);
 		table.getColumnModel().getColumn(13).setPreferredWidth(116);
 		scrollPane.setViewportView(table);
 		contentPane.setLayout(gl_contentPane);
@@ -508,18 +488,19 @@ public class TelaPrincipalClientes extends JFrame {
 
 	private void popularTebela() throws NegocioException {
 		try {	
-			usuarios = new UsuarioService().listarDadosClientes();
+			fornec = new FornecedoresService().listarDadosFornecedores();
 			
 			DefaultTableModel model = (DefaultTableModel) table.getModel();
 					
 			model.getDataVector().removeAllElements();	
 			model.setNumRows(0);
 	
-			for (UsuarioEntity usu : usuarios) {
+			for (FornecedoresEntity usu : fornec) {
 				
 				model.addRow( new Object[] {
 						usu.getId(), 
-						usu.getNome(), 
+						usu.getRazao(), 
+						usu.getCnpj(),
 						usu.getEmail(),
 						usu.getCep(), 
 						usu.getEndereco(), 
@@ -530,7 +511,6 @@ public class TelaPrincipalClientes extends JFrame {
 						usu.getEstado(), 
 						usu.getObs(), 
 						usu.getGps(),
-						usu.getLogin(), 
 						usu.getTelefone()});
 			}
 			
@@ -555,7 +535,8 @@ public class TelaPrincipalClientes extends JFrame {
 
 	private void limparCampos() {
 		fieldId.setText("");
-		fieldNome.setText("");
+		fieldRazao.setText("");
+		fieldCnpj.setText("");
 		fieldEmail.setText("");
 		fieldCep.setText("");
 		fieldRua.setText("");
@@ -565,16 +546,14 @@ public class TelaPrincipalClientes extends JFrame {
 		fieldComplemento.setText("");
 		fieldObs.setText("");
 		fieldGps.setText("");
-		fieldLogin.setText("");
 		fieldEstado.setText("");
 		fieldTelefone.setText("");
-		fieldPassword.setText("");
-
 	}
 
-	private void carregarDadosNaTela(UsuarioEntity cli) {
+	private void carregarDadosNaTela(FornecedoresEntity cli) {
 		fieldId.setText(String.valueOf(cli.getId()));
-		fieldNome.setText(cli.getNome());
+		fieldRazao.setText(cli.getRazao());
+		fieldCnpj.setText(cli.getCnpj());
 		fieldEmail.setText(cli.getEmail());
 		fieldCep.setText(cli.getCep());
 		fieldRua.setText(cli.getEndereco());
@@ -584,42 +563,41 @@ public class TelaPrincipalClientes extends JFrame {
 		fieldComplemento.setText(cli.getComplemento());
 		fieldObs.setText(cli.getObs());
 		fieldGps.setText(cli.getGps());
-		fieldLogin.setText(cli.getLogin());
 		fieldEstado.setText(cli.getEstado());
 		fieldTelefone.setText(cli.getTelefone());
-
 	}
 
-	@SuppressWarnings("deprecation")
-	private UsuarioEntity carregarDadosParaGravacao() {
-		UsuarioEntity cli = new UsuarioEntity();
+	private FornecedoresEntity carregarDadosParaGravacao() {
+		FornecedoresEntity fornec = new FornecedoresEntity();
+		
 		
 		if (fieldId.getText().equals("")) {
-			cli.setId(null);
+			fornec.setId(null);
 		} else {
-			cli.setId(Long.parseLong(fieldId.getText()));
+			
+			fornec.setId(Long.parseLong(fieldId.getText()));
 		}
 		
-		cli.setNome(fieldNome.getText());
-		cli.setEmail(fieldEmail.getText());
-		cli.setCep(fieldCep.getText());
-		cli.setEndereco(fieldRua.getText());
-		cli.setNumero(fieldNumero.getText());
-		cli.setBairro(fieldBairro.getText());
-		cli.setCidade(fieldCidade.getText());
-		cli.setComplemento(fieldComplemento.getText());
-		cli.setObs(fieldObs.getText());
-		cli.setGps(fieldGps.getText());
-		cli.setLogin(fieldLogin.getText());
-		cli.setEstado(fieldEstado.getText());
-		cli.setTelefone(fieldTelefone.getText());
-		cli.setSenha(fieldPassword.getText());
+		fornec.setRazao(fieldRazao.getText());
+		fornec.setCnpj(fieldCnpj.getText());
+		fornec.setEmail(fieldEmail.getText());
+		fornec.setCep(fieldCep.getText());
+		fornec.setEndereco(fieldRua.getText());
+		fornec.setNumero(fieldNumero.getText());
+		fornec.setBairro(fieldBairro.getText());
+		fornec.setCidade(fieldCidade.getText());
+		fornec.setComplemento(fieldComplemento.getText());
+		fornec.setObs(fieldObs.getText());
+		fornec.setGps(fieldGps.getText());
+		fornec.setEstado(fieldEstado.getText());
+		fornec.setTelefone(fieldTelefone.getText());
 		
-		return cli;
+		return fornec;
 	}
 
 	private void habilitarDesabilitarCampos(final boolean acao) {
-		fieldNome.setEnabled(acao);
+		fieldRazao.setEnabled(acao);
+		fieldCnpj.setEnabled(acao);
 		fieldEmail.setEnabled(acao);
 		fieldCep.setEnabled(acao);
 		fieldRua.setEnabled(acao);
@@ -629,9 +607,7 @@ public class TelaPrincipalClientes extends JFrame {
 		fieldComplemento.setEnabled(acao);
 		fieldObs.setEnabled(acao);
 		fieldGps.setEnabled(acao);
-		fieldLogin.setEnabled(acao);
 		fieldEstado.setEnabled(acao);
 		fieldTelefone.setEnabled(acao);
-		fieldPassword.setEnabled(acao);
 	}
 }

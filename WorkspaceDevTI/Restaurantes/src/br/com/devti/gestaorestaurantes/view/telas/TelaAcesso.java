@@ -1,6 +1,5 @@
 package br.com.devti.gestaorestaurantes.view.telas;
 
-import java.awt.Dialog.ModalExclusionType;
 import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -16,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
@@ -29,7 +29,7 @@ public class TelaAcesso extends JFrame {
 	
 	private JPanel contentPane;
 	private JTextField fieldLogin;
-	private JTextField fieldSenha;
+	private JPasswordField fieldSenha;
 
 	public TelaAcesso() {
 		setResizable(false);
@@ -101,43 +101,46 @@ public class TelaAcesso extends JFrame {
 
 		fieldLogin = new JTextField();
 		fieldLogin.setColumns(10);
-
-		fieldSenha = new JTextField();
-		fieldSenha.setColumns(10);
+		
+		fieldSenha = new JPasswordField();
 		
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
-		gl_contentPane.setHorizontalGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-				.addGroup(Alignment.LEADING,
-						gl_contentPane.createSequentialGroup().addGap(76)
-								.addComponent(btnAcessarButton, GroupLayout.PREFERRED_SIZE, 155,
-										GroupLayout.PREFERRED_SIZE)
-								.addContainerGap(193, Short.MAX_VALUE))
-				.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup().addGroup(gl_contentPane
-						.createParallelGroup(Alignment.TRAILING)
-						.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup().addGap(36)
-								.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-										.addComponent(lblNewLabel_1_1, GroupLayout.PREFERRED_SIZE, 62,
-												GroupLayout.PREFERRED_SIZE)
-										.addComponent(fieldSenha, GroupLayout.PREFERRED_SIZE, 234,
-												GroupLayout.PREFERRED_SIZE)))
-						.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING).addComponent(lblNewLabel_1)
-								.addComponent(fieldLogin, GroupLayout.PREFERRED_SIZE, 232, GroupLayout.PREFERRED_SIZE)))
-						.addContainerGap(154, Short.MAX_VALUE))
-				.addGroup(gl_contentPane.createSequentialGroup().addContainerGap(522, Short.MAX_VALUE)
-						.addComponent(lblNewLabel).addGap(124)));
-		gl_contentPane.setVerticalGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_contentPane.createSequentialGroup().addGap(6).addComponent(lblNewLabel).addGap(18)
-						.addComponent(lblNewLabel_1).addPreferredGap(ComponentPlacement.RELATED)
-						.addComponent(fieldLogin, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(ComponentPlacement.UNRELATED)
-						.addComponent(lblNewLabel_1_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(ComponentPlacement.RELATED)
-						.addComponent(fieldSenha, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-						.addComponent(btnAcessarButton, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
-						.addGap(32)));
+		gl_contentPane.setHorizontalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addContainerGap(122, Short.MAX_VALUE)
+					.addComponent(lblNewLabel)
+					.addGap(124))
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGap(76)
+					.addComponent(btnAcessarButton, GroupLayout.PREFERRED_SIZE, 155, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(77, Short.MAX_VALUE))
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGap(36)
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
+						.addComponent(lblNewLabel_1)
+						.addComponent(fieldLogin, GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
+						.addComponent(lblNewLabel_1_1, GroupLayout.PREFERRED_SIZE, 62, GroupLayout.PREFERRED_SIZE)
+						.addComponent(fieldSenha))
+					.addGap(40))
+		);
+		gl_contentPane.setVerticalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGap(6)
+					.addComponent(lblNewLabel)
+					.addGap(18)
+					.addComponent(lblNewLabel_1)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(fieldLogin, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addGap(11)
+					.addComponent(lblNewLabel_1_1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(fieldSenha, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+					.addComponent(btnAcessarButton, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+					.addGap(32))
+		);
 		contentPane.setLayout(gl_contentPane);
 	}
 }

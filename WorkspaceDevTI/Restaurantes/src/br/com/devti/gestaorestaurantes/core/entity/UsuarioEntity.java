@@ -27,6 +27,15 @@ public class UsuarioEntity implements Serializable {
 	private String obs;
 	private String gps;
 	
+	@Override
+	public String toString() {
+		return "UsuarioEntity [id=" + id + ", nome=" + nome + ", login=" + login + ", senha=" + senha + ", email="
+				+ email + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + ", celular=" + celular + ", telefone="
+				+ telefone + ", cep=" + cep + ", endereco=" + endereco + ", numero=" + numero + ", bairro=" + bairro
+				+ ", complemento=" + complemento + ", cidade=" + cidade + ", estado=" + estado + ", obs=" + obs
+				+ ", gps=" + gps + "]";
+	}
+
 	public Long getId() {
 		return id;
 	}

@@ -2,25 +2,30 @@ package br.com.devti.gestaorestaurantes.view;
 
 import java.awt.EventQueue;
 
+import javax.swing.JOptionPane;
+
+import br.com.devti.gestaorestaurantes.core.entity.UsuarioEntity;
+import br.com.devti.gestaorestaurantes.core.service.UsuarioService;
+import br.com.devti.gestaorestaurantes.core.util.exception.NegocioException;
 import br.com.devti.gestaorestaurantes.view.telas.TelaAcesso;
 
 public class Principal {
 	public static void main(String[] args) {
 		
-//		UsuarioEntity usuario = new UsuarioEntity();
-//		
-//		usuario.setNome("Jeffe");
-//		usuario.setLogin("j");
-//		usuario.setSenha("j");
-//		usuario.setEmail("jeffe.info@gmail.com");
-//		
-//		UsuarioService usuarioService = new UsuarioService();
-//		
-//		try {
-//			System.out.println(usuarioService.salvar(usuario));
-//		}catch(NegocioException e) {
-//			JOptionPane.showMessageDialog(null, e.getMensagemDeErro());
-//		}
+		UsuarioEntity usuario = new UsuarioEntity();
+		
+		usuario.setNome("Jeffe");
+		usuario.setLogin("j");
+		usuario.setSenha("j");
+		usuario.setEmail("jeffe.info@gmail.com");
+		
+		UsuarioService usuarioService = new UsuarioService();
+		
+		try {
+			System.out.println(usuarioService.salvarDadosAcesso(usuario));
+		}catch(NegocioException e) {
+			JOptionPane.showMessageDialog(null, e.getMensagemDeErro());
+		}
 		
 		
 		
